@@ -1,0 +1,1280 @@
+\documentclass[a5paper,8pt]{book}
+\usepackage[bg-none]{lib/rpg-book} % Options: bg-a4, bg-letter, bg-full, bg-print, bg-none.
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{tabulary}
+\usepackage{siunitx}
+
+\usepackage{fouriernc}
+\usepackage{parskip}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{makecell}
+
+\usepackage[table]{xcolor}
+\usepackage{longtable}
+\usepackage{tabu}
+\usepackage{ltablex}
+
+\usepackage[T1]{fontenc}
+
+\usepackage{bookmark}
+
+% For disabling word breaking
+\usepackage[none]{hyphenat}
+
+\addtolength{\oddsidemargin}{+.5cm}
+\addtolength{\evensidemargin}{-.5cm}
+
+
+
+% \usepackage{pgfpages}
+% \pgfpagesuselayout{2 on 1}[a4paper,landscape,border shrink=5mm]
+
+\title{Trzy Rudzielce i Elf}
+\date{\today}
+\author{The Dungeon Mistress, Vivien, Yeleda, Calion, Garret}
+
+% Start document
+\begin{document}
+\fontfamily{ppl}\selectfont % Set text font
+
+\renewcommand{\thesection}{\arabic{section}} % For omitting leading zeros in section count.
+
+% Your content goes here
+
+% \pagenumbering{gobble}
+\pagestyle{plain}
+\fancyhfoffset[LE]{0pt} % push the footer left on even pages so it fits the decal
+\fancyhfoffset[RO]{0pt} % push the footer right on odd pages so it fits the decalbg-img
+
+\tableofcontents
+~
+\newpage
+
+\footnotesize
+
+\rowcolors{2}{gray!25}{white}
+
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+\newcolumntype{Z}{>{\raggedleft\arraybackslash}X}
+
+\section{Blacksmith/Armory}
+\begin{tabularx}{\textwidth}{lrrr}
+    ~ & \textsc{Cheap} & \textsc{Normal} & \textsc{Expensive}\\
+    \textbf{Hard Sell (daily)} & $750$gp & $1000$gp & $1500$gp\\
+    \textbf{Selling Cap (daily)} & $1500$gp & $2000$gp & $3000$gp\\
+\end{tabularx}
+\begin{tabularx}{\textwidth}{|p{0.1cm}lZZZYYYY|}
+    \hline
+    \multicolumn{2}{|l}{\textsc{Item Name}} & \textsc{Norm. Price} & \textsc{Cheap Price} & \textsc{Exp. Price} & \textsc{Short Stock} & \textsc{Rural} & \textsc{Urban} & \textsc{Prem.}\\
+    \hline
+    \multicolumn{9}{|l|}{\textbf{Armor}}\\ \hline
+    \multicolumn{9}{|l|}{\textit{Light Armor}}\\ \hline
+    ~ & Studded Leather & $45$gp & $33$gp & $68$gp & ~ & ~ & ~ & X\\ \hline
+    \multicolumn{9}{|l|}{\textit{Medium Armor}}\\ \hline
+    ~ & Chain shirt & $50$gp  & $38$gp & $75$gp & X & X & X & X\\ \hline
+    ~ & Scale Mail & $50$gp & $38$gp & $75$gp & ~ & ~ & X & X \\ \hline
+    ~ & Breastplate & $400$gp & $300$gp & $600$gp & X & X & X & X \\ \hline
+    ~ & Half Plate & $750$gp & $562$gp & $1125$gp & ~ & ~ & ~ & X \\ \hline
+    \multicolumn{9}{|l|}{\textit{Heavy Armor}}\\ \hline
+    ~ & Ring Mail & $30$gp & $22$gp & $45$gp & ~ & X & X & X \\ \hline
+    ~ & Chain Mail & $75$gp & $56$gp & $113$gp & X & X & X & X \\ \hline
+    ~ & Splint & $200$gp & $150$gp & $300$gp & ~ & ~ & X & X \\ \hline
+    ~ & Plate & $1500$gp & $1125$gp & $2250$gp & ~ & ~ & ~ & X \\ \hline
+    \multicolumn{9}{|l|}{\textit{Shield}}\\ \hline
+    ~ & Shield & $10$gp & $7$gp & $15$gp & X & X & X & X \\ \hline
+    \multicolumn{9}{|l|}{\textbf{Weapons}}\\ \hline
+    \multicolumn{9}{|l|}{\textit{Simple Melee Weapons}}\\ \hline
+    ~ & Dagger & $2$gp & $1$gp & $3$gp & X & X & X & X \\ \hline
+    ~ & Handaxe & $5$gp & $3$gp & $8$gp & X & X & X & X \\ \hline
+    ~ & Javelin & $5$gp & $3$gp & $8$gp & ~ & ~ & X & X \\ \hline
+    ~ & Light Hammer & $2$gp & $1$gp & $3$gp & ~ & ~ & X & X \\ \hline
+    ~ & Mace & $5$gp & $3$gp & $8$gp & ~ & X & X & X \\ \hline
+    ~ & Sickle & $1$gp & $7$sp & $2$gp & ~ & ~ & X & X \\ \hline
+    ~ & Spear & $1$gp & $7$sp & $2$gp  & X & X & X & X \\ \hline
+    \multicolumn{9}{|l|}{\textit{Martial Melee Weapons}}\\ \hline
+    ~ & Battleaxe & $10$gp & $7$gp & $15$gp  & X & X & X & X \\ \hline
+    ~ & Flail & $10$gp & $7$gp & $15$gp  & ~ & ~ & X & X \\ \hline
+    ~ & Glaive & $20$gp & $15$gp & $30$gp & ~ & ~ & X & X \\ \hline
+    ~ & Greataxe & $30$gp & $22$gp & $45$gp  & ~ & X & X & X \\ \hline
+    ~ & Greatsword & $50$gp & $38$gp & $75$gp  & X & X & X & X \\ \hline
+    ~ & Halberd & $20$gp & $15$gp & $30$gp  & ~ & ~ & X & X \\ \hline
+    ~ & Lance & $10$gp & $7$gp & $15$gp  & ~ & ~ & ~ & X \\ \hline
+    ~ & Longsword & $15$gp & $11$gp & $22$gp  & X & X & X & X \\ \hline
+    ~ & Maul & $10$gp & $7$gp & $15$gp  & ~ & ~ & X & X \\ \hline
+    ~ & Morningstar & $15$gp &  $11$gp & $22$gp  & ~ & ~ & X & X \\ \hline
+    ~ & Pike & $5$gp & $3$gp & $8$gp  & ~ & X & X & X \\ \hline
+    ~ & Rapier & $25$gp & $18$gp & $38$gp  & ~ & ~ & ~ & X \\ \hline
+    ~ & Scimitar & $25$gp & $18$gp & $38$gp & ~ & ~ & X & X \\ \hline
+    ~ & Shortsword & $10$gp & $7$gp & $15$gp  & X & X & X & X \\ \hline
+    ~ & Trident & $5$gp & $3$gp & $8$gp & ~ & ~ & ~ & X \\ \hline
+    ~ & War Pick & $5$gp & $3$gp & $8$gp & ~ & ~ & X & X \\ \hline
+    ~ & Warhammer & $15$gp & $11$gp & $22$gp & ~ & X & X & X \\ \hline
+    \multicolumn{9}{|l|}{\textbf{Adventuring Gear}}\\ \hline
+    ~ & Ball Bearings (bag of 1,000) & $1$gp & $7$sp & $2$gp & ~ & X & X & X \\ \hline
+    ~ & Bell & $1$gp & $7$sp & $2$gp & ~ & X & X & X \\ \hline
+    ~ & Block and Tackle & $1$gp & $7$sp & $2$gp & ~ & ~ & X & X \\ \hline
+    ~ & Chain (10 feet) & $5$gp & $3$gp & $8$gp & X & X & X & X \\ \hline
+    ~ & Crowbar & $2$gp & $1$gp & $3$gp & X & X & X & X \\ \hline
+    ~ & Grappling Hook & $2$gp & $1$gp & $3$gp & ~ & ~ & X & X \\ \hline
+    ~ & Hammer & $1$gp & $7$sp & $2$gp & X & X & X & X \\ \hline
+    ~ & Hammer, Sledge & $2$gp & $1$gp & $3$gp & ~ & X & X & X \\ \hline
+    ~ & Hunting Trap & $5$gp & $3$gp & $8$gp & ~ & X & X & X \\ \hline
+    ~ & Lamp & $5$sp & $3$sp & $8$sp & ~ & X & X & X \\ \hline
+    ~ & Lantern, Bullseye & $10$gp & $7$gp & $15$gp & ~ & ~ & ~ & X \\ \hline
+    ~ & Lantern, Hooded & $5$gp & $3$gp & $8$gp & ~ & ~ & X & X \\ \hline
+    ~ & Lock & $10$gp & $7$gp & $15$gp & ~ & X & X & X \\ \hline
+    ~ & Manacles & $2$gp & $1$gp & $3$gp & ~ & ~ & X & X \\ \hline
+    ~ & Mirror, Steel & $5$gp & $3$gp & $8$gp & ~ & ~ & X & X \\ \hline
+    ~ & Pick, Miner's & $2$gp & $1$gp & $3$gp & ~ & X & X & X \\ \hline
+    ~ & Piton & $5$cp & $3$cp & $8$cp & ~ & X & X & X \\ \hline
+    ~ & Pot, Iron & $2$gp & $1$gp & $3$gp & ~ & X & X & ~ \\ \hline
+    ~ & Spikes, Iron & $1$gp & $7$sp & $2$gp & ~ & ~ & X & X \\ \hline
+    ~ & Whetstone & $1$cp & $1$cp & $2$cp & X & X & X & X \\ \hline
+    \multicolumn{9}{|l|}{\textbf{Tools}}\\ \hline
+    \multicolumn{9}{|l|}{\textit{Artisan's Tools}}\\ \hline
+    ~ & Carpenter's Tools & $8$gp & $6$gp & $12$gp & ~ & X & X & X \\ \hline
+    ~ & Mason's Tools & $10$gp & $7$gp & $15$gp & ~ & ~ & X & X \\ \hline
+    ~ & Smith's Tools & $20$gp & $15$gp & $30$gp & X & X & X & X \\ \hline
+    ~ & Tinker's Tools & $50$gp & $38$gp & $75$gp & ~ & ~ & ~ & X \\ \hline
+    \multicolumn{9}{|l|}{\textbf{Musical Instrument}}\\ \hline
+    ~ & Horn & $3$gp & $2$gp & $5$gp & ~ & ~ & ~ & X \\ \hline
+\end{tabularx}
+
+
+\section{Fletcher/Bowyer}
+\begin{tabularx}{\textwidth}{lrrr}
+    ~ & \textsc{Cheap} & \textsc{Normal} & \textsc{Expensive}\\
+    \textbf{Hard Sell (daily)} & $375$gp & $500$gp & $750$gp\\
+    \textbf{Selling Cap (daily)} & $750$gp & $1000$gp & $1500$gp\\
+\end{tabularx}
+\begin{tabularx}{\textwidth}{|p{0.1cm}lZZZYYYY|}
+    \hline
+    \multicolumn{2}{|l}{\textsc{Item Name}} & \textsc{Norm. Price} & \textsc{Cheap Price} & \textsc{Exp. Price} & \textsc{Short Stock} & \textsc{Rural} & \textsc{Urban} & \textsc{Prem.}\\\hline
+    \multicolumn{9}{|l|}{\textbf{Weapons}}\\\hline
+    \multicolumn{9}{|l|}{\textit{Simple Ranged Weapons}}\\\hline
+    ~ & Crossbow, Light & $25$gp & $18$gp & $38$gp & ~ & X & X & X \\\hline
+    ~ & Shortbow & $25$gp & $18$gp & $38$gp & X & X & X & X \\\hline
+    \multicolumn{9}{|l|}{\textit{Martial Ranged Weapons}}\\\hline
+    ~ & Crossbow, Hand & $75$gp & $56$gp & $113$gp & ~ & ~ & X & X \\\hline
+    ~ & Crossbow, Heavy & $50$gp & $38$gp & $75$gp & ~ & X & X & X \\\hline
+    ~ & Longbow & $50$gp & $38$gp & $75$gp & X & X & X & X \\\hline
+    \multicolumn{9}{|l|}{\textbf{Adventuring Gear}}\\\hline
+    \multicolumn{9}{|l|}{\textit{Ammunition}}\\\hline
+    ~ & Arrows (20) & $1$gp & $7$sp & $2$gp & X & X & X & X \\\hline
+    ~ & Crossbow Bolts (20) & $1$gp & $7$sp & $2$gp & ~ & X & X & X \\\hline
+    ~ & Bowstring (5) & $2$gp & $1$gp & $3$gp & X & X & X & X \\\hline
+    ~ & Case, Crossbow Bolt & $1$gp & $7$sp & $2$gp & ~ & X & X & X \\\hline
+    ~ & Quiver & $1$gp & $7$sp & $2$gp & X & X & X & X \\\hline
+\end{tabularx}
+
+
+\section{Leatherworker}
+\begin{tabularx}{\textwidth}{lrrr}
+    ~ & \textsc{Cheap} & \textsc{Normal} & \textsc{Expensive}\\
+    \textbf{Hard Sell (daily)} & $375$gp & $5000$gp & $750$gp\\
+    \textbf{Selling Cap (daily)} & $750$gp & $1000$gp & $1500$gp\\
+\end{tabularx}
+\begin{tabularx}{\textwidth}{|p{0.1cm}lZZZYYYY|}
+    \hline
+    \multicolumn{2}{|l}{\textsc{Item Name}} & \textsc{Norm. Price} & \textsc{Cheap Price} & \textsc{Exp. Price} & \textsc{Short Stock} & \textsc{Rural} & \textsc{Urban} & \textsc{Prem.}\\\hline
+    \multicolumn{9}{|l|}{\textbf{Armor}}\\\hline
+    \multicolumn{9}{|l|}{\textit{Light Armor}}\\\hline
+    ~ & Leather & $10$gp & $7$gp & $15$gp & X & X & X & X \\\hline
+    ~ & Studded Leather & $45$gp & $33$gp & $68$gp & ~ & X & X & X \\\hline
+    \multicolumn{9}{|l|}{\textit{Medium Armor}}\\\hline
+    ~ & Hide & $10$gp & $7$gp & $15$gp & X & X & X & X \\\hline
+    \multicolumn{9}{|l|}{\textit{Shield}}\\\hline
+    ~ & Shield & $10$gp & $7$gp & $15$gp & ~ & ~ & X & X \\\hline
+    \multicolumn{9}{|l|}{\textbf{Weapons}}\\\hline
+    \multicolumn{9}{|l|}{\textit{Simple Ranged Weapons}}\\\hline
+    ~ & Sling & $1$sp & $7$cp & $2$sp & ~ & X & X & X \\\hline
+    \multicolumn{9}{|l|}{\textit{Adventuring Gear}}\\\hline
+    ~ & Waterskin & $2$sp & $1$sp & $3$sp & X & X & X & X \\\hline
+    \multicolumn{9}{|l|}{\textbf{Tools}}\\\hline
+    \multicolumn{9}{|l|}{\textit{Artisan's Tools}}\\\hline
+    ~ & Cobbler's Tools & $5$gp & $3$gp & $8$gp & ~ & X & X & X \\\hline
+    ~ & Leatherworker's Tools & $5$gp & $3$gp & $8$gp & X & X & X & X \\\hline
+    \multicolumn{9}{|l|}{\textit{Musical Instrument}}\\\hline
+    ~ & Bagpipes & $30$gp & $22$gp & $45$gp & ~ & ~ & ~ & X \\\hline
+    ~ & Drum & $6$gp & $4$gp & $9$gp & ~ & ~ & X & X \\\hline
+\end{tabularx}
+
+\newpage
+
+\section{Temple/Faith Supplies}
+\begin{tabularx}{\textwidth}{lrrr}
+    ~ & \textsc{Cheap} & \textsc{Normal} & \textsc{Expensive}\\
+    \textbf{Hard Sell (daily)} & $281$gp & $375$gp & $500$gp\\
+    \textbf{Selling Cap (daily)} & $562$gp & $750$gp & $1000$gp\\
+\end{tabularx}
+\emph{Trade goods accepted.  An "O" instead of an "X" indicates only clergy and proven devout members of their associated religion may purchase these items.}
+\begin{tabularx}{\textwidth}{|p{0.1cm}lZZZYYYY|}
+    \hline
+    \multicolumn{2}{|l}{\textsc{Item Name}} & \textsc{Norm. Price} & \textsc{Cheap Price} & \textsc{Exp. Price} & \textsc{Short Stock} & \textsc{Rural} & \textsc{Urban} & \textsc{Prem.}\\\hline
+    \multicolumn{9}{|l|}{\textbf{Adventuring Gear}}\\\hline
+    ~ & Alms Box & $5$gp & $3$gp & $8$gp & ~ & O & O & O \\\hline
+    ~ & Bell & $1$gp & $7$sp & $2$gp & ~ & ~ & X & X \\\hline
+    ~ & Blanket & $5$sp & $3$sp & $8$sp & ~ & X & X & X \\\hline
+    ~ & Book, Scripture & $25$gp & $18$gp & $38$gp & X & X & X & X \\\hline
+    ~ & Candle & $1$cp & $1$cp & $2$cp & X & X & X & X \\\hline
+    ~ & Case, Map or Scroll & $1$gp & $7$sp & $2$gp & ~ & ~ & X & X \\\hline
+    ~ & Censer & $5$gp & $3$gp & $8$gp & ~ & O & O & O \\\hline
+    ~ & Chalk (1 piece) & $1$cp & $1$cp & $2$cp & ~ & X & X & X \\\hline
+    ~ & Flask & $2$cp & $1$cp & $3$cp & X & X & X & X \\\hline
+    ~ & Healer's Kit & $5$gp & $3$gp & $8$gp & ~ & ~ & X & X \\\hline
+    \multicolumn{9}{|l|}{\textit{Holy Symbol}}\\\hline
+    ~ & Amulet & $5$gp & $3$gp & $8$gp & X & X & X & X \\\hline
+    ~ & Emblem & $5$gp & $3$gp & $8$gp & X & X & X & X \\\hline
+    ~ & Reliquary & $5$gp & $3$gp & $8$gp & X & X & X & X \\\hline
+    ~ & Holy Water (flask) & $25$gp & $18$gp & $38$gp & X & X & X & X \\\hline
+    ~ & Incense (1 block) & $1$cp & $1$cp & $2$cp & ~ & O & O & O \\\hline
+    ~ & Ink (1 ounce bottle) & $10$gp & $7$gp & $15$gp & ~ & ~ & X & X \\\hline
+    ~ & Ink Pen (Fountain) & $3$gp & $2$gp & $5$gp & ~ & ~ & X & X \\\hline
+    ~ & Lamp & $5$sp & $3$sp & $8$sp & ~ & X & X & X \\\hline
+    ~ & Lantern, Hooded & $5$gp & $3$sp & $8$sp & ~ & ~ & ~ & X \\\hline
+    ~ & Oil (flask) & $1$sp & $7$cp & $2$sp & X & X & X & X \\\hline
+    ~ & Paper (one sheet) & $2$sp & $1$sp & $3$sp & ~ & ~ & ~ & X \\\hline
+    ~ & Parchment (one sheet) & $1$sp & $7$cp & $2$sp & ~ & ~ & X & ~ \\\hline
+    ~ & Perfume (vial) & $5$gp & $3$gp & $8$gp & ~ & ~ & ~ & X \\\hline
+    ~ & Potion of Healing & $50$gp & $38$gp & $75$gp & ~ & ~ & ~ & X \\\hline
+    ~ & Rations (1 day) & $5$sp & $3$sp & $8$sp & ~ & X & X & X \\\hline
+    ~ & Torch & $1$cp & $1$cp & $2$cp & X & X & X & X \\\hline
+    ~ & Vial & $1$gp & $7$sp & $2$gp & X & X & X & X \\\hline
+    ~ & Waterskin & $2$sp & $1$sp & $3$sp & ~ & X & X & X \\\hline
+    \multicolumn{9}{|l|}{\textbf{Tools}}\\\hline
+    \multicolumn{9}{|l|}{\textit{Artisan's Tools}}\\\hline
+    ~ & Calligrapher's Supplies & $10$gp & $7$gp & $15$gp & ~ & ~ & O & O \\\hline
+    ~ & Herbalism Kit & $5$gp & $3$gp & $8$gp & ~ & ~ & X & X \\\hline
+    \multicolumn{9}{|l|}{\textit{Musical Instrument}}\\\hline
+    ~ & Flute & $2$gp & $1$gp & $3$gp & ~ & ~ & ~ & O \\\hline
+    ~ & Lyre & $30$gp & $22$gp & $45$gp & ~ & ~ & ~ & O \\\hline
+    ~ & Horn & $3$gp & $2$gp & $5$gp & ~ & ~ & ~ & O \\\hline
+    \multicolumn{9}{|l|}{\textbf{Services}}\\\hline
+    \multicolumn{9}{|l|}{\textit{Spellcasting}}\\\hline
+    ~ & Cure Wounds (lvl  1) & $10$gp & $7$gp & $15$gp & X & X & X & X \\\hline
+    ~ & Gentle Repose (lvl 2) & $50$gp & $38$gp & $75$gp & ~ & X & X & X \\\hline
+    ~ & Lesser Restoration (lvl 2) & $50$gp & $38$gp & $75$gp & X & X & X & X \\\hline
+    ~ & Remove Curse (lvl 3) & $100$gp & $75$gp & $150$gp & ~ & X & X & X \\\hline
+    ~ & Revivify (lvl 3) & $400$gp & $375$gp & $450$gp & ~ & X & X & X \\\hline
+    ~ & Raise Dead (lvl 5) & $1000$gp & $875$gp & $1250$gp & ~ & X & X & X \\\hline
+\end{tabularx}
+
+\subsection{Spellcaster Availability}
+\begin{tabularx}{\textwidth}{lX}
+    \hline
+    \textbf{\textsc{Locale}} & \textbf{\textsc{Available Spellcasters}}\\\hline
+    \textbf{Limited} & 1 Acolyte. No expendable components available, subtract costs of materials if provided. Roll d\%; 1-15 is a Commoner (either a pious merchant, or a charlatan posing as a healer) instead of an Acolyte; 80100 is a Priest instead of an Acolyte, with additional hit dice and caster level equal to 1d4-1.\\
+    \textbf{Rural} & 1d4 Acolytes, and 1 Priest with additional hit dice and caster level equal to 1d4-1. Expendable components available at a 25\% chance, subtract costs of materials if provided.\\
+    \textbf{Urban} & 2d8+3 Acolytes, and 1d2 Priest with additional hit dice and caster level equal to 1d6-1. Expendable components available at a 55\% chance, subtract costs of materials if provided.\\
+    \textbf{Premium} & 3d10+2 Acolytes, and 1d4 Priests with additional hit dice and caster level equal to 1d6-1. Expendable components available at a 75\% chance, subtract costs of materials if provided.\\\hline
+\end{tabularx}
+
+
+
+\section{Book Prices (Library or Otherwise)}
+\emph{Not all books will be for sale. Some rarer tomes, or those in private collections may be more than chart prices.}
+\begin{tabularx}{\textwidth}{|p{0.1cm}lZZZYYYY|}
+    \hline
+    \multicolumn{2}{|l}{\textsc{Item Name}} & \textsc{Norm. Price} & \textsc{Cheap Price} & \textsc{Exp. Price} & \textsc{Short Stock} & \textsc{Rural} & \textsc{Urban} & \textsc{Prem.}\\\hline
+    ~ & Common, Soft Bound & $8$gp & $6$gp & $12$gp & X & X & X & ~ \\\hline
+    ~ & Common, Hard Bound & $10$gp & $7$gp & $15$gp & X & X & X & X \\\hline
+    ~ & Uncommon, Soft Bound & $15$gp & $11$gp & $23$gp & X & ~ & X & X \\\hline
+    ~ & Uncommon, Hard Bound & $20$gp & $14$sp & $30$gp & X & ~ & X & X \\\hline
+    ~ & Rare, Soft Bound & $30$gp & $22$gp & $45$gp & X & ~ & ~ & X \\\hline
+    ~ & Rare, Hard Bound & $50$gp & $38$gp & $75$gp & X & ~ & ~ & X \\\hline
+\end{tabularx}
+
+\newpage
+
+\section{General Store}
+\begin{tabularx}{\textwidth}{lrrr}
+    ~ & \textsc{Cheap} & \textsc{Normal} & \textsc{Expensive}\\
+    \textbf{Hard Sell (daily)} & $281$gp & $375$gp & $500$gp\\
+    \textbf{Selling Cap (daily)} & $562$gp & $750$gp & $1000$gp\\
+\end{tabularx}
+\emph{Trade goods accepted.}
+\begin{tabularx}{\textwidth}{|p{0.1cm}lZZZYYYY|}
+    \hline
+    \multicolumn{2}{|l}{\textsc{Item Name}} & \textsc{Norm. Price} & \textsc{Cheap Price} & \textsc{Exp. Price} & \textsc{Short Stock} & \textsc{Rural} & \textsc{Urban} & \textsc{Prem.}\\\hline
+    \multicolumn{9}{|l|}{\textit{Adventuring Gear}}\\\hline
+    ~ & Abacus & $2$gp & $1$gp & $3$gp & ~ & ~ & X & X \\\hline
+    ~ & Barrel & $2$gp & $1$gp & $3$gp & ~ & X & X & X \\\hline
+    ~ & Blanket & $5$sp & $3$sp & $8$sp & X & X & X & X \\\hline
+    ~ & Bottle, glass & $2$gp & $1$gp & $3$gp & ~ & X & X & X \\\hline
+    ~ & Bucket & $5$cp & $3$cp & $8$cp & ~ & X & X & X \\\hline
+    ~ & Candle & $1$cp & $1$cp & $2$cp & X & X & X & X \\\hline
+    ~ & Chest & $5$gp & $3$gp & $8$gp & ~ & ~ & X & X \\\hline
+    ~ & Clothes, Common & $5$sp & $3$sp & $8$sp & ~ & X & X & X \\\hline
+    ~ & Clothes, Fine & $15$gp & $11$gp & $23$gp & ~ & ~ & ~ & X \\\hline
+    ~ & Flask or Tankard & $2$cp & $1$cp & $3$cp & X & X & X & X \\\hline
+    ~ & Ink (1 ounce bottle) & $10$gp & $7$gp & $15$gp & X & X & X & X \\\hline
+    ~ & Ink Pen (Fountain) & $3$gp & $2$gp & $5$gp & ~ & ~ & X & X \\\hline
+    ~ & Journal, Soft Bound, 25 Sheets & $7$gp & $5$gp & $11$gp & ~ & X & X & X \\\hline
+    ~ & Jug or Pitcher & $2$cp & $1$cp & $3$cp & X & X & X & X \\\hline
+    ~ & Ladder (10-foot) & $1$sp & $7$cp & $2$sp & ~ & X & X & X \\\hline
+    ~ & Lantern, Hooded & $5$gp & $3$gp & $8$gp & ~ & ~ & X & X \\\hline
+    ~ & Lamp & $5$sp & $3$sp & $8$sp & ~ & X & X & X \\\hline
+    ~ & Lock & $10$gp & $7$gp & $15$gp & ~ & ~ & X & X \\\hline
+    ~ & Mess Kit & $2$sp & $1$sp & $3$sp & ~ & X & X & X \\\hline
+    ~ & Mirror, Steel & $5$gp & $3$gp & $8$gp & ~ & X & X & X \\\hline
+    ~ & Paper (one sheet) & $2$sp & $1$sp & $3$sp & ~ & ~ & X & X \\\hline
+    ~ & Parchment (one sheet) & $1$sp & $7$cp & $2$sp & X & X & X & ~ \\\hline
+    ~ & Pick, Miner's & $2$gp & $1$gp & $3$gp & ~ & X & X & X \\\hline
+    ~ & Pot, Iron & $2$gp & $1$gp & $3$gp & X & X & X & X \\\hline
+    ~ & Pouch & $5$sp & $3$sp & $8$sp & ~ & X & X & X \\\hline
+    ~ & Rope, Hempen (50 feet) & $1$gp & $7$sp & $2$gp & ~ & X & X & X \\\hline
+    ~ & Rope, Silk (50 feet) & $10$gp & $7$gp & $15$gp & ~ & ~ & ~ & X \\\hline
+    ~ & Sack & $1$cp & $1$cp & $2$cp & X & X & X & X \\\hline
+    ~ & Scale, Merchant's & $5$gp & $3$gp & $8$gp & ~ & ~ & X & X \\\hline
+    ~ & Shovel & $2$gp & $1$gp & $3$gp & ~ & X & X & X \\\hline
+    ~ & Signet Ring & $5$gp & $3$gp & $8$gp & ~ & ~ & X & X \\\hline
+    ~ & Soap & $2$cp & $1$cp & $3$cp & ~ & ~ & X & X \\\hline
+    ~ & Vial & $1$gp & $7$sp & $2$gp & ~ & ~ & X & X \\\hline
+    \multicolumn{9}{|l|}{\textbf{Tools}}\\\hline
+    \multicolumn{9}{|l|}{\textit{Artisan's Tools}}\\\hline
+    ~ & Carpenter's Tools & $8$gp & $6$gp & $12$gp & X & X & X & X \\\hline
+    ~ & Cobbler's Tools & $5$gp & $3$gp & $8$gp & ~ & X & X & X \\\hline
+    ~ & Cook's Utensils & $1$gp & $7$sp & $2$gp & X & X & X & X \\\hline
+    ~ & Glassblower's Tools & $30$gp & $22$gp & $45$gp & ~ & ~ & ~ & X \\\hline
+    ~ & Leatherworker's Tools & $5$gp & $3$gp & $8$gp & ~ & ~ & X & X \\\hline
+    ~ & Mason's Tools & $10$gp & $7$gp & $15$gp & X & X & X & X \\\hline
+    ~ & Potter's Tools & $10$gp & $7$gp & $15$gp & ~ & X & X & X \\\hline
+    ~ & Smith's Tools & $20$gp & $15$gp & $30$gp & ~ & ~ & ~ & X \\\hline
+    ~ & Weaver's Tools & $1$gp & $7$sp & $2$gp & ~ & X & X & X \\\hline
+    ~ & Woodcarver's Tools & $1$gp & $7$sp & $2$gp & X & X & X & X \\\hline
+    \end{tabularx}
+
+
+\section{Adventuring Supplies}
+\begin{tabularx}{\textwidth}{lrrr}
+    ~ & \textsc{Cheap} & \textsc{Normal} & \textsc{Expensive}\\
+    \textbf{Hard Sell (daily)} & $562$gp & $750$gp & $1125$gp\\
+    \textbf{Selling Cap (daily)} & $1125$gp & $150$gp & $2260$gp\\
+\end{tabularx}
+\emph{Trade goods accepted.}
+\begin{tabularx}{\textwidth}{|p{0.1cm}lZZZYYYY|}
+    \hline
+    \multicolumn{2}{|l}{\textsc{Item Name}} & \textsc{Norm. Price} & \textsc{Cheap Price} & \textsc{Exp. Price} & \textsc{Short Stock} & \textsc{Rural} & \textsc{Urban} & \textsc{Prem.}\\\hline
+    \multicolumn{9}{|l|}{\textbf{Armor}}\\\hline
+    \multicolumn{9}{|l|}{\textit{Light Armor}}\\\hline
+    ~ & Padded & $5$gp & $3$gp & $8$gp & ~ & ~ & X & X \\\hline
+    ~ & Leather & $10$gp & $7$gp & $15$gp & ~ & ~ & X & X \\\hline
+    ~ & Studded Leather & $45$gp & $33$gp & $68$gp & ~ & ~ & ~ & X \\\hline
+    \multicolumn{9}{|l|}{\textit{Medium Armor}}\\\hline
+    ~ & Hide & $10$gp & $7$gp & $15$gp & ~ & X & X & X \\\hline
+    \multicolumn{9}{|l|}{\textbf{Weapons}}\\\hline
+    \multicolumn{9}{|l|}{\textit{Simple Melee Weapons}}\\\hline
+    ~ & Club & $1$sp & $7$cp & $2$sp & ~ & X & ~ & ~ \\\hline
+    ~ & Dagger & $2$gp & $1$gp & $3$gp & X & X & X & X \\\hline
+    ~ & Greatclub & $2$sp & $1$sp & $3$sp & ~ & X & X & ~ \\\hline
+    ~ & Handaxe & $5$gp & $3$gp & $8$gp & X & X & X & X \\\hline
+    ~ & Light Hammer & $2$gp & $1$gp & $3$gp & ~ & X & X & X \\\hline
+    ~ & Quarterstaff & $2$sp & $1$sp & $3$sp & ~ & X & X & ~ \\\hline
+    \multicolumn{9}{|l|}{\textit{Simple Ranged Weapons}}\\\hline
+    ~ & Crossbow, Light & $25$gp & $18$gp & $38$gp & ~ & ~ & X & X \\\hline
+    ~ & Dart & $5$cp & $3$cp & $8$cp & ~ & X & X & X \\\hline
+    ~ & Shortbow & $25$gp & $18$gp & $38$gp & X & X & X & X \\\hline
+    ~ & Sling & $1$sp & $7$cp & $2$sp & ~ & X & X & ~ \\\hline
+    \multicolumn{9}{|l|}{\textit{Martial Melee Weapons}}\\\hline
+    ~ & Whip & $2$gp & $1$gp & $3$gp & ~ & X & X & X \\\hline
+    \multicolumn{9}{|l|}{\textit{Martial Ranged Weapons}}\\\hline
+    ~ & Blowgun & $10$gp & $7$gp & $15$gp & ~ & X & ~ & ~ \\\hline
+    ~ & Crossbow, hand & $75$gp & $56$gp & $113$gp & ~ & ~ & X & X \\\hline
+    ~ & Crossbow, heavy & $50$gp & $38$gp & $75$gp & ~ & ~ & ~ & X \\\hline
+    ~ & Longbow & $50$gp & $38$gp & $75$gp & X & X & X & X \\\hline
+    \multicolumn{9}{|l|}{\textbf{Adventuring Gear}}\\\hline
+    \multicolumn{9}{|l|}{\textit{Ammunition}}\\\hline
+    ~ & Arrows (20) & $1$gp & $7$sp & $2$gp & X & X & X & X \\\hline
+    ~ & Blowgun Needles (50) & $1$gp & $7$sp & $2$gp & ~ & X & ~ & ~ \\\hline
+    ~ & Crossbow Bolts (20) & $1$gp & $7$sp & $2$gp & X & ~ & X & X \\\hline
+    ~ & Sling Bullets (20) & $4$cp & $3$cp & $6$cp & ~ & X & X & ~ \\\hline
+    ~ & Backpack & $2$gp & $1$gp & $3$gp & X & X & X & X \\\hline
+    ~ & Bedroll & $1$gp & $7$sp & $2$gp & X & X & X & X \\\hline
+    ~ & Blanket & $5$sp & $3$sp & $8$sp & X & X & X & X \\\hline
+    ~ & Block and Tackle & $1$gp & $7$sp & $2$gp & ~ & ~ & X & X \\\hline
+    ~ & Bottle, glass & $2$gp & $1$gp & $3$gp & X & X & X & X \\\hline
+    ~ & Candle & $1$cp & $1$cp & $2$cp & ~ & ~ & X & X \\\hline
+    ~ & Case, Crossbow Bolt & $1$gp & $7$sp & $2$gp & ~ & ~ & X & X \\\hline
+    ~ & Case, Map or Scroll & $1$gp & $7$sp & $2$gp & ~ & X & X & X \\\hline
+    ~ & Chain (10 feet) & $5$gp & $3$gp & $8$gp & ~ & ~ & X & X \\\hline
+    ~ & Chest & $5$gp & $3$gp & $8$gp & ~ & X & X & X \\\hline
+    ~ & Climber's Kit & $25$gp & $18$gp & $38$gp & ~ & ~ & X & X \\\hline
+    ~ & Clothes, Traveler's & $2$gp & $1$gp & $3$gp & X & X & X & X \\\hline
+    ~ & Crowbar & $2$gp & $1$gp & $3$gp & X & X & X & X \\\hline
+    ~ & Flask or Tankard & $2$cp & $1$cp & $3$cp & X & X & X & X \\\hline
+    ~ & Grappling Hook & $2$gp & $1$gp & $3$gp & X & ~ & X & X \\\hline
+    ~ & Hammer & $1$gp & $7$sp & $2$gp & X & X & X & X \\\hline
+    ~ & Healer's Kit & $5$gp & $3$gp & $8$gp & ~ & ~ & ~ & X \\\hline
+    ~ & Hourglass & $25$gp & $18$gp & $38$gp & ~ & ~ & ~ & X \\\hline
+    ~ & Hunting Trap & $5$gp & $3$gp & $8$gp & ~ & X & X & X \\\hline
+    ~ & Ink (1 ounce bottle) & $10$gp & $7$gp & $15$gp & ~ & ~ & ~ & X \\\hline
+    ~ & Ink Pen (Fountain) & $3$gp & $2$gp & $5$gp & ~ & ~ & X & X \\\hline
+    ~ & Jug or Pitcher & $2$cp & $1$cp & $3$cp & X & X & X & X \\\hline
+    ~ & Ladder (10-foot) & $1$sp & $7$cp & $2$sp & ~ & ~ & X & X \\\hline
+    ~ & Lantern, Bullseye & $10$gp & $7$gp & $15$gp & ~ & ~ & X & X \\\hline
+    ~ & Lantern, Hooded & $5$gp & $3$gp & $8$gp & X & X & X & X \\\hline
+    ~ & Lock & $10$gp & $7$gp & $15$gp & ~ & ~ & ~ & X \\\hline
+    ~ & Mess Kit & $2$sp & $1$sp & $3$sp & ~ & ~ & X & X \\\hline
+    ~ & Mirror, Steel & $5$gp & $3$gp & $8$gp & ~ & ~ & X & X \\\hline
+    ~ & Paper (one sheet) & $2$sp & $1$sp & $3$sp & ~ & ~ & ~ & X \\\hline
+    ~ & Parchment (one sheet) & $1$sp & $7$cp & $2$sp & ~ & X & X & ~ \\\hline
+    ~ & Pick, Miner's & $2$gp & $1$gp & $3$gp & ~ & X & X & X \\\hline
+    ~ & Piton & $5$cp & $3$cp & $8$cp & ~ & X & X & X \\\hline
+    ~ & Pole (10-foot) & $5$cp & $3$cp & $8$cp & ~ & X & X & X \\\hline
+    ~ & Pot, Iron & $2$gp & $1$gp & $3$gp & X & X & X & X \\\hline
+     & Pouch & $5$sp & $3$sp & $8$sp & X & X & X & X \\\hline
+    ~ & Quiver & $1$gp & $7$sp & $2$gp & X & X & X & X \\\hline
+    ~ & Rations (1 day) & $5$sp & $3$sp & $8$sp & ~ & ~ & X & X \\\hline
+    ~ & Rope, Hempen (50 feet) & $1$gp & $7$sp & $2$gp & X & X & X & X \\\hline
+    ~ & Rope, Silk (50 feet) & $10$gp & $7$gp & $15$gp & ~ & ~ & ~ & X \\\hline
+    ~ & Sack & $1$cp & $1$cp & $2$cp & X & X & X & X \\\hline
+    ~ & Shovel & $2$gp & $1$gp & $3$gp & X & X & X & X \\\hline
+    ~ & Signal Whistle & $5$cp & $3$cp & $8$cp & ~ & ~ & X & X \\\hline
+    ~ & Signet Ring & $5$gp & $3$gp & $8$gp & ~ & ~ & ~ & X \\\hline
+    ~ & Spyglass & $1000$gp & $750$gp & $1500$gp & ~ & ~ & X & X \\\hline
+    ~ & Tent, Two-person & $2$gp & $1$gp & $3$gp & X & X & X & X \\\hline
+    ~ & Tinderbox & $5$sp & $3$sp & $8$sp & X & X & X & X \\\hline
+    ~ & Torch & $1$cp & $1$cp & $2$cp & X & X & X & X \\\hline
+    ~ & Vial & $1$gp & $7$sp & $2$gp & X & X & X & X \\\hline
+    ~ & Waterskin & $2$sp & $1$sp & $3$sp & X & X & X & X \\\hline
+    \multicolumn{9}{|l|}{\textbf{Tools}}\\\hline
+    \multicolumn{9}{|l|}{\textit{Artisan's Tools}}\\\hline
+    ~ & Cartographer's Tools & $15$gp & $11$gp & $23$gp & ~ & ~ & X & X \\\hline
+    ~ & Jeweler's Tools & $25$gp & $18$gp & $38$gp & ~ & ~ & ~ & X \\\hline
+    ~ & Tinker's Tools & $50$gp & $38$gp & $75$gp & ~ & ~ & X & X \\\hline
+    ~ & Herbalism Kit & $5$gp & $3$gp & $8$gp & ~ & ~ & X & X \\\hline
+    ~ & Navigator's Tools & $25$gp & $18$gp & $38$gp & X & X & X & X \\\hline
+\end{tabularx}
+
+\subsection{Water-side Theme}
+\emph{Can apply to either a General Store or an Adventuring Supplies Shop}
+\begin{tabularx}{\textwidth}{|p{0.1cm}lZZZYYYY|}
+    \hline
+    \multicolumn{2}{|l}{\textsc{Item Name}} & \textsc{Norm. Price} & \textsc{Cheap Price} & \textsc{Exp. Price} & \textsc{Short Stock} & \textsc{Rural} & \textsc{Urban} & \textsc{Prem.}\\\hline
+    \multicolumn{9}{|l|}{\textbf{Weapons}}\\\hline
+    \multicolumn{9}{|l|}{\textit{Simple Melee Weapons}}\\\hline
+    ~ & Spear & $1$gp & $7$sp & $2$gp & ~ & X & X & X \\\hline
+    \multicolumn{9}{|l|}{\textbf{Martial Ranged Weapons}}\\\hline
+    ~ & Net & $1$gp & $7$sp & $2$gp & X & X & X & X \\\hline
+    \multicolumn{9}{|l|}{\textit{Adventuring Gear}}\\\hline
+    ~ & Fishing Tackle & $1$gp & $7$sp & $2$gp & X & X & X & X \\\hline
+    \multicolumn{9}{|l|}{\textbf{Waterborne Vehicles}}\\\hline
+    ~ & Rowboat & $50$gp & $38$gp & $75$gp & ~ & X & X & X \\\hline
+    \multicolumn{9}{|l|}{\textbf{Trade Goods}}\\\hline
+    ~ & 1 lb. of Fishing Bait & $5$cp & $3$cp & $8$cp & X & X & X & X \\\hline
+\end{tabularx}
+
+\subsection{Magical Theme}
+\emph{Can apply to either a General Store or an Adventuring Supplies Shop}
+\begin{tabularx}{\textwidth}{|p{0.1cm}lZZZYYYY|}
+    \hline
+    \multicolumn{2}{|l}{\textsc{Item Name}} & \textsc{Norm. Price} & \textsc{Cheap Price} & \textsc{Exp. Price} & \textsc{Short Stock} & \textsc{Rural} & \textsc{Urban} & \textsc{Prem.}\\\hline
+    \multicolumn{9}{|l|}{\textbf{Adventuring Gear}}\\\hline
+    \multicolumn{9}{|l|}{\textit{Arcane Focus}}\\\hline
+    ~ & Crystal & $10$gp & $7$gp & $15$gp & ~ & ~ & X & X \\\hline
+    ~ & Orb & $20$gp & $15$gp & $30$gp & ~ & ~ & ~ & X \\\hline
+    ~ & Rod & $10$gp & $7$gp & $15$gp & ~ & X & X & X \\\hline
+    ~ & Staff & $5$gp & $3$gp & $8$gp & X & X & X & X \\\hline
+    ~ & Wand & $10$gp & $7$gp & $15$gp & X & X & X & X \\\hline
+    ~ & Component Pouch & $25$gp & $18$gp & $38$gp & X & X & X & X \\\hline
+    ~ & Potion of Healing & $50$gp & $38$gp & $75$gp & ~ & ~ & X & X \\\hline
+    ~ & Spellbook & $50$gp & $38$gp & $75$gp & ~ & X & X & X \\\hline
+\end{tabularx}
+
+\newpage
+
+ \subsection{Shady Dealer Theme}
+ \emph{Can apply to either a General Store or an Adventuring Supplies Shop}
+     \begin{tabularx}{\textwidth}{|p{0.1cm}lZZZYYYY|}
+         \hline
+         \multicolumn{2}{|l}{\textsc{Item Name}} & \textsc{Norm. Price} & \textsc{Cheap Price} & \textsc{Exp. Price} & \textsc{Short Stock} & \textsc{Rural} & \textsc{Urban} & \textsc{Prem.}\\\hline
+     \multicolumn{9}{|l|}{\textbf{Adventuring Gear}}\\\hline
+         ~ & Acid (vial) & $25$gp & $18$gp & $38$gp & X & X & X & X \\\hline
+         ~ & Antitoxin (vial) & $50$gp & $38$gp & $75$gp & X & X & X & X \\\hline
+         ~ & Caltrops (bag of 20) & $1$gp & $7$sp & $2$gp & ~ & ~ & X & X \\\hline
+         ~ & Clothes, Costume & $5$gp & $3$gp & $8$gp & ~ & ~ & ~ & X \\\hline
+         ~ & Manacles & $2$gp & $1$gp & $3$gp & ~ & ~ & ~ & X \\\hline
+         ~ & Oil (flask) & $1$sp & $7$cp & $2$sp & X & X & X & X \\\hline
+         ~ & Poison, Basic (vial) & $100$gp & $75$gp & $150$gp & X & X & X & X \\\hline
+         ~ & Ram, Portable & $4$gp & $3$gp & $6$gp & ~ & ~ & ~ & X \\\hline
+         ~ & Spikes, Iron (10) & $1$gp & $7$sp & $2$gp & ~ & ~ & ~ & X \\\hline
+     \multicolumn{9}{|l|}{\textbf{Tools}}\\\hline
+         \multicolumn{2}{|l}{Disguise Kit} & $25$gp & $18$gp & $38$gp & ~ & ~ & X & X \\\hline
+         \multicolumn{2}{|l}{Forgery Kit} & $15$gp & $11$gp & $23$gp & ~ & X & X & X \\\hline
+     \multicolumn{9}{|l|}{\textit{Gaming Set}}\\\hline
+         ~ & Dice Set & $1$sp & $7$cp & $2$sp & X & X & X & X \\\hline
+         ~ & Playing Card Set & $5$sp & $3$sp & $8$sp & ~ & X & X & X \\\hline
+         ~ & Poisoner's Kit & $50$gp & $38$gp & $75$gp & X & X & X & X \\\hline
+         ~ & Thieves' Tools & $25$gp & $18$gp & $38$gp & X & X & X & X \\\hline
+ \end{tabularx}
+
+ \subsection{Art and Games Theme}
+ \emph{Can apply to either a General Store or an Adventuring Supplies Shop}
+     \begin{tabularx}{\textwidth}{|p{0.1cm}lZZZYYYY|}
+         \hline
+         \multicolumn{2}{|l}{\textsc{Item Name}} & \textsc{Norm. Price} & \textsc{Cheap Price} & \textsc{Exp. Price} & \textsc{Short Stock} & \textsc{Rural} & \textsc{Urban} & \textsc{Prem.}\\\hline
+     \multicolumn{9}{|l|}{\textbf{Tools}}\\\hline
+     \multicolumn{9}{|l|}{\textit{Artisan's Tools}}\\\hline
+         ~ & Calligrapher's Supplies & $10$gp & $8$gp & $15$gp & ~ & ~ & X & X \\\hline
+         ~ & Glassblower's Tools & $30$gp & $22$gp & $45$gp & ~ & ~ & ~ & X \\\hline
+         ~ & Painter's Supplies & $10$gp & $8$gp & $15$gp & X & X & X & X \\\hline
+         ~ & Potter's Tools & $10$gp & $8$gp & $15$gp & ~ & ~ & X & X \\\hline
+         ~ & Weaver's Tools & $1$gp & $7$sp & $2$gp & ~ & X & X & X \\\hline
+         ~ & Woodcarver's Tools & $1$gp & $7$sp & $2$gp & ~ & X & X & X \\\hline
+         \multicolumn{2}{|l}{Disguise Kit} & $25$gp & $18$gp & $38$gp & ~ & ~ & ~ & X \\\hline
+     \multicolumn{9}{|l|}{\textit{Gaming Set}}\\\hline
+         ~ & Dice Set & $1$sp & $7$cp & $2$sp & X & X & X & X \\\hline
+         ~ & Dragonchess Set & $1$gp & $7$sp & $2$gp & ~ & ~ & ~ & X \\\hline
+         ~ & Playing Card Set & $5$sp & $3$sp & $8$sp & ~ & X & X & X \\\hline
+         ~ & Three-Dragon Ante Set & $1$gp & $7$sp & $2$gp & ~ & ~ & X & X \\\hline
+     \multicolumn{9}{|l|}{\textit{Musical Instrument}}\\\hline
+         ~ & Bagpipes & $30$gp & $22$gp & $45$gp & ~ & ~ & ~ & X \\\hline
+         ~ & Drum & $6$gp & $4$gp & $9$gp & ~ & X & X & X \\\hline
+         ~ & Dulcimer & $25$gp & $18$gp & $38$gp & ~ & ~ & X & X \\\hline
+         ~ & Flute & $2$gp & $1$gp & $3$gp & X & X & X & X \\\hline
+         ~ & Lute & $35$gp & $26$gp & $53$gp & ~ & X & X & X \\\hline
+         ~ & Lyre & $30$gp & $22$gp & $45$gp & X & X & X & X \\\hline
+         ~ & Horn & $3$gp & $2$gp & $5$gp & ~ & ~ & X & X \\\hline
+         ~ & Pan Flute & $12$gp & $9$gp & $18$gp & ~ & X & X & X \\\hline
+         ~ & Shawn & $2$gp & $1$gp & $3$gp & ~ & ~ & X & X \\\hline
+         ~ & Viol & $30$gp & $22$gp & $45$gp & ~ & ~ & ~ & X \\\hline
+ \end{tabularx}
+
+
+\section{Tailor/Textiles}
+\begin{tabularx}{\textwidth}{lrrr}
+    ~ & \textsc{Cheap} & \textsc{Normal} & \textsc{Expensive}\\
+    \textbf{Hard Sell (daily)} & $281$gp & $375$gp & $500$gp\\
+    \textbf{Selling Cap (daily)} & $562$gp & $750$gp & $1000$gp\\
+\end{tabularx}
+\begin{tabularx}{\textwidth}{|p{0.1cm}lZZZYYYY|}
+    \hline
+    \multicolumn{2}{|l}{\textsc{Item Name}} & \textsc{Norm. Price} & \textsc{Cheap Price} & \textsc{Exp. Price} & \textsc{Short Stock} & \textsc{Rural} & \textsc{Urban} & \textsc{Prem.}\\\hline
+    \multicolumn{9}{|l|}{\textbf{Weapons}}\\\hline
+    \multicolumn{9}{|l|}{\textbf{Adventuring Gear}}\\\hline
+    ~ & Basket & $4$sp & $3$sp & $6$sp & X & X & X & X \\\hline
+    ~ & Cloak, Canvas & $7$sp & $5$sp & $11$sp & ~ & X & X & X \\\hline
+    ~ & Cloak, Leather & $2$gp & $1$gp & $3$gp & X & ~ & X & X \\\hline
+    ~ & Cloak, Leather, Lined & $4$gp & $3$gp & $6$gp & X & ~ & X & X \\\hline
+    ~ & Clothes, Common & $5$sp & $3$sp & $8$sp & X & X & X & X \\\hline
+    ~ & Clothes, Costume & $5$gp & $3$gp & $8$gp & ~ & ~ & ~ & X \\\hline
+    ~ & Clothes, Fine & $15$gp & $11$gp & $23$gp & ~ & ~ & X & X \\\hline
+    ~ & Clothes, Traveler's & $2$gp & $1$gp & $3$gp & ~ & X & X & X \\\hline
+    ~ & Component Pouch & $25$gp & $18$gp & $38$gp & ~ & ~ & ~ & X \\\hline
+    ~ & Pouch & $5$sp & $3$sp & $8$sp & X & X & X & X \\\hline
+    ~ & Robes & $1$gp & $7$sp & $2$gp & ~ & X & X & X \\\hline
+    ~ & Sack & $1$cp & $1$cp & $2$cp & X & X & X & X \\\hline
+    ~ & Tent, Two-person & $2$gp & $1$gp & $3$gp & ~ & ~ & X & X \\\hline
+    \multicolumn{9}{|l|}{\textbf{Miscellaneous}}\\\hline
+    ~ & Bone Needle (5) & $3$cp & $2$cp & $5$cp & ~ & X & X & X \\\hline
+    ~ & Steel Needle (1) & $1$sp & $1$sp & $2$sp & ~ & ~ & X & X \\\hline
+    ~ & Cotton Thread (30 feet) & $5$sp & $3$sp & $8$sp & X & ~ & X & X \\\hline
+    ~ & Leather Cord (15 feet) & $1$gp & $7$sp & $2$gp & X & X & X & X \\\hline
+    \multicolumn{9}{|l|}{\textbf{Tools}}\\\hline
+    \multicolumn{9}{|l|}{\textit{Artisan's Tools}}\\\hline
+    ~ & Weaver's Tools & $1$gp & $7$sp & $2$gp & X & X & X & X \\\hline
+\end{tabularx}
+
+\newpage
+
+\section{Transportation}
+\emph{Barding – Armor used to protect an animal. Cost is standard armor cost x4.\\ See Blacksmithing. Prices located on pg. 157 of the PHB.}
+\begin{tabularx}{\textwidth}{|p{0.1cm}lZZZYYYY|}
+    \hline
+    \multicolumn{2}{|l}{\textsc{Item Name}} & \textsc{Norm. Price} & \textsc{Cheap Price} & \textsc{Exp. Price} & \textsc{Short Stock} & \textsc{Rural} & \textsc{Urban} & \textsc{Prem.}\\\hline
+    \multicolumn{9}{|l|}{\textbf{Mounts \& Other Animals}}\\\hline
+    ~ & Camel – 50 ft – 480 lbs & $50$gp & $38$gp & $75$gp & X & ~ & X & ~ \\\hline
+    ~ & Donkey/ Mule – 40 ft – 420 lbs & $8$gp & $6$gp & $12$gp & ~ & X & X & ~ \\\hline
+    ~ & Elephant – 40 ft – 1,320 lbs & $200$gp & $140$gp & $300$gp & X & ~ & X & X \\\hline
+    ~ & Horse, draft – 40 ft – 540 lbs & $50$gp & $38$gp & $75$gp & X & X & X & ~ \\\hline
+    ~ & Horse, riding – 60 ft – 480 lbs & $75$gp & $56$gp & $113$gp & X & ~ & X & X \\\hline
+    ~ & Mastiff – 40 ft – 195 lbs & $25$gp & $18$gp & $38$gp & ~ & X & X & X \\\hline
+    ~ & Pony – 40 ft – 225 lbs & $30$gp & $22$gp & $45$gp & X & X & X & X \\\hline
+    ~ & Warhorse – 60 ft – 540 lbs & $400$gp & $280$gp & $600$gp & X & ~ & ~ & X \\\hline
+    \multicolumn{9}{|l|}{\textbf{Tack \& Drawn Vehicles}}\\\hline
+    ~ & Barding & X4 & X3 & X6 & ~ & X & X & X \\\hline
+    ~ & Bit \& Bridle & $2$gp & $1$gp & $3$gp & ~ & X & X & X \\\hline
+    ~ & Carriage & $100$gp & $70$gp & $150$gp & X & ~ & X & X \\\hline
+    ~ & Cart & $15$gp & $11$gp & $23$gp & X & X & X & X \\\hline
+    ~ & Chariot & $250$gp & $175$gp & $375$gp & X & ~ & X & X \\\hline
+    ~ & Feed (per day) & $5$cp & $3$cp & $8$cp & X & X & X & X \\\hline
+    \multicolumn{9}{|l|}{\textit{Saddle}}\\\hline
+    ~ & Exotic & $60$gp & $48$gp & $72$gp & X & ~ & ~ & X \\\hline
+    ~ & Military & $20$gp & $15$gp & $30$gp & X & ~ & X & X \\\hline
+    ~ & Pack & $5$gp & $3$gp & $8$gp & ~ & X & X & X \\\hline
+    ~ & Riding & $10$gp & $7$gp & $15$gp & X & ~ & X & X \\\hline
+    \multicolumn{2}{|l}{Saddlebags} & $4$gp & $3$gp & $6$gp & ~ & ~ & X & X \\\hline
+    \multicolumn{2}{|l}{Sled} & $20$gp & $15$gp & $30$gp & X & X & X & X \\\hline
+    \multicolumn{2}{|l}{Stabling (per day)} & $5$sp & $3$gp & $8$gp & ~ & X & X & X \\\hline
+    \multicolumn{2}{|l}{Wagon} & $35$gp & $28$gp & $42$gp & ~ & X & X & X \\\hline
+    \multicolumn{9}{|l|}{\textbf{Waterborne Vehicles}}\\\hline
+    ~ & Galley & $30000$gp & $21000$gp & $40000$gp & X & ~ & ~ & X \\\hline
+    ~ & Keelboat & $3000$gp & $2100$gp & $4000$gp & X & X & X & X \\\hline
+    ~ & Longship & $10000$gp & $7000$gp & $15000$gp & X & ~ & X & X \\\hline
+    ~ & Rowboat & $50$gp & $38$gp & $75$gp & X & X & X & X \\\hline
+    ~ & Sailing Ship & $10000$gp & $7000$gp & $15000$gp & X & ~ & X & X \\\hline
+    ~ & Warship & $25000$gp & $17500$gp & $35000$gp & X & ~ & ~ & X \\\hline
+\end{tabularx}
+
+\newpage
+
+\section{Jeweller/Stonecutter}
+\begin{tabularx}{\textwidth}{lrrr}
+    ~ & \textsc{Cheap} & \textsc{Normal} & \textsc{Expensive}\\
+    \textbf{Hard Sell (daily)} & $750$gp & $1000$gp & $1500$gp\\
+    \textbf{Selling Cap (daily)} & $1500$gp & $2000$gp & $3000$gp\\
+\end{tabularx}
+\begin{tabularx}{\textwidth}{|p{0.1cm}lZZZYYYY|}
+    \hline
+    \multicolumn{2}{|l}{\textsc{Item Name}} & \textsc{Norm. Price} & \textsc{Cheap Price} & \textsc{Exp. Price} & \textsc{Short Stock} & \textsc{Rural} & \textsc{Urban} & \textsc{Prem.}\\\hline
+    \multicolumn{9}{|l|}{\textbf{Adventuring Gear}}\\\hline
+    \multicolumn{2}{|l}{Amulet / Necklace, Exquisite} & $5$gp & $3$gp & $8$gp & X & X & X & X \\\hline
+    \multicolumn{2}{|l}{Amulet / Necklace, Mundane} & $5$sp & $3$sp & $8$sp &   X & X & X & X \\\hline
+    \multicolumn{9}{|l|}{\textit{Arcane Focus}}\\\hline
+    ~ & Crystal & $10$gp & $7$gp & $15$gp & ~ & ~ & X & X \\\hline
+    ~ & Orb & $20$gp & $15$gp & $30$gp & ~ & ~ & ~ & X \\\hline
+    ~ & Earrings, Exquisite & $4$gp & $3$gp & $6$gp & X & X & X & X \\\hline
+    ~ & Earrings, Mundane & $4$sp & $3$sp & $6$sp & X & X & X & X \\\hline
+    ~ & Jewelry (+ Gem value) & $50$gp & $38$gp & $75$gp & X & X & X & X \\\hline
+    ~ & Ring, Exquisite & $3$gp & $2$gp & $5$gp & X & X & X & X \\\hline
+    ~ & Ring, Mundane & $3$sp & $2$sp & $5$sp & X & X & X & X \\\hline
+    ~ & Signet Ring & $5$gp & $3$gp & $8$gp & ~ & X & X & X \\\hline
+    \multicolumn{9}{|l|}{\textbf{Tools}}\\\hline
+    \multicolumn{9}{|l|}{\textbf{Artisans's Tools}}\\\hline
+    ~ & Jeweler's Tools & $25$gp & $18$gp & $38$gp & ~ & X & X & X \\\hline
+    \multicolumn{9}{|l|}{\textbf{Services}}\\\hline
+    ~ & Gemstone Appraisal (3 gems) & $5$gp & $3$gp & $8$gp & X & X & X & X \\\hline
+    ~ & Resizing Jewelry & $10$gp & $7$gp & $15$gp & ~ & X & X & X \\\hline
+    ~ & Set Gem (<$100$gp value) & $45$gp & $34$gp & $68$gp & ~ & X & X & X \\\hline
+    ~ & Set Gem (100-1Kgp value) & $75$gp & $56$gp & $113$gp & ~ & ~ & X & X \\\hline
+    ~ & Set Gem (1K+gp value) & $150$gp & $113$gp & $225$gp & ~ & ~ & ~ & X \\\hline
+    ~ & Stonecutting (+ value) & 0.25 & (n/a) & (n/a) & ~ & ~ & X & X \\\hline
+    \multicolumn{9}{|l|}{\textbf{Gemstones by Value}}\\\hline
+    \multicolumn{9}{|l|}{\textbf{10 GP Gemstones}}\\\hline
+    ~ & Azurite (Deep blue) & $10$gp & $7$gp & $15$gp & X & X & X & X \\\hline
+    ~ & Banded agate (Brown / Blue) & $10$gp & $7$gp & $15$gp & X & X & X & X \\\hline
+    ~ & Blue quartz (Pale blue) & $10$gp & $7$gp & $15$gp & X & X & X & X \\\hline
+    ~ & Eye agate (Circles, gray / blue) & $10$gp & $7$gp & $15$gp & X & X & X & X \\\hline
+    ~ & Hematite (Opaque gray-black) & $10$gp & $7$gp & $15$gp & X & X & X & X \\\hline
+    ~ & Lapis lazuli (Blue with yellow) & $10$gp & $7$gp & $15$gp & X & X & X & X \\\hline
+    ~ & Malachite (Striated greens) & $10$gp & $7$gp & $15$gp & X & X & X & X \\\hline
+    ~ & Moss agate (Pale, moss marks) & $10$gp & $7$gp & $15$gp & X & X & X & X \\\hline
+    ~ & Obsidian (Opaque black) & $10$gp & $7$gp & $15$gp & X & X & X & ~ \\\hline
+    ~ & Rhodochrosite (Light pink) & $10$gp & $7$gp & $15$gp & X & X & X & X \\\hline
+    ~ & Tiger eye (Brown, gold center) & $10$gp & $7$gp & $15$gp & X & X & X & X \\\hline
+    ~ & Turquoise (Light blue-green) & $10$gp & $7$gp & $15$gp & X & X & X & ~ \\\hline
+    \multicolumn{9}{|l|}{\textbf{50 GP Gemstones}}\\\hline
+    ~ & Bloodstone (Gray with red) & $50$gp & $38$gp & $75$gp & X & X & X & ~ \\\hline
+    ~ & Carnelian (Opaque oranges) & $50$gp & $38$gp & $75$gp & X & X & X & X \\\hline
+    ~ & Chalcedony (Opaque white) & $50$gp & $38$gp & $75$gp & X & X & X & X \\\hline
+    ~ & Chrysoprase (Clear green) & $50$gp & $38$gp & $75$gp & X & X & X & X \\\hline
+    ~ & Citrine (Pale yellow-brown) & $50$gp & $38$gp & $75$gp & X & X & X & X \\\hline
+    ~ & Jasper (Blue, black, or brown) & $50$gp & $38$gp & $75$gp & X & X & X & ~ \\\hline
+    ~ & Moonstone (White + glow) & $50$gp & $38$gp & $75$gp & ~ & ~ & X & X \\\hline
+    ~ & Onyx (Black, white, or both) & $50$gp & $38$gp & $75$gp & X & X & X & X \\\hline
+    ~ & Quartz (Transparent range) & $50$gp & $38$gp & $75$gp & X & X & X & ~ \\\hline
+    ~ & Sardonyx (Red \& white) & $50$gp & $38$gp & $75$gp & X & X & X & X \\\hline
+    ~ & Star rose quartz (White star) & $50$gp & $38$gp & $75$gp & X & X & X & X \\\hline
+    ~ & Zircon (Pale blue-green) & $50$gp & $38$gp & $75$gp & X & X & X & X \\\hline
+    \multicolumn{9}{|l|}{\textbf{100 GP Gemstones}}\\\hline
+    ~ & Amber (Watery gold) & $100$gp & $75$gp & $150$gp & X & ~ & X & X \\\hline
+    ~ & Amethyst (Deep purple) & $100$gp & $75$gp & $150$gp & X & ~ & ~ & X \\\hline
+    ~ & Chrysoberyl (Yellow-green) & $100$gp & $75$gp & $150$gp & X & ~ & X & X \\\hline
+    ~ & Coral (Opaque crimson) & $100$gp & $75$gp & $150$gp & X & ~ & ~ & X \\\hline
+    ~ & Garnet (Red, or violet) & $100$gp & $75$gp & $150$gp & X & ~ & X & X \\\hline
+    ~ & Jade (Green to white) & $100$gp & $75$gp & $150$gp & X & ~ & X & X \\\hline
+    ~ & Jet (Opaque deep black) & $100$gp & $75$gp & $150$gp & X & ~ & X & X \\\hline
+    ~ & Pearl (Lustrous white to pink) & $100$gp & $75$gp & $150$gp & X & X & X & X \\\hline
+    ~ & Spinel (Clear red to green) & $100$gp & $75$gp & $150$gp & X & ~ & X & X \\\hline
+    ~ & Tourmaline (Pale Red / Brown) & $100$gp & $75$gp & $150$gp & X & ~ & X & X \\\hline
+    \multicolumn{9}{|l|}{\textbf{500 GP Gemstones}}\\\hline
+    ~ & Alexandrite (Dark green) & $500$gp & $375$gp & $750$gp & X & ~ & X & X \\\hline
+    ~ & Aquamarine (Pale green-blue) & $500$gp & $375$gp & $750$gp & X & ~ & X & X \\\hline
+    ~ & Black pearl (Pure black) & $500$gp & $375$gp & $750$gp & X & ~ & ~ & X \\\hline
+    ~ & Bluespinel (Deep blue) & $500$gp & $375$gp & $750$gp & X & ~ & X & X \\\hline
+    ~ & Peridot (Rich olive green) & $500$gp & $375$gp & $750$gp & X & ~ & X & X \\\hline
+    ~ & Topaz (Golden yellow) & $499$gp & $375$gp & $750$gp & X & ~ & ~ & X \\\hline
+    \multicolumn{9}{|l|}{\textbf{1000 GP Gemstones}}\\\hline
+    ~ & Black Opal (Translucent green) & $1000$gp & $750$gp & $1500$gp & X & ~ & ~ & X \\\hline
+    ~ & Blue sapphire (Shades of blue) & $1000$gp & $750$gp & $1500$gp & X & ~ & ~ & X \\\hline
+    ~ & Emerald (Deep bright green) & $1000$gp & $750$gp & $1500$gp & X & ~ & X & X \\\hline
+    ~ & Fire opal (Firey red) & $1000$gp & $750$gp & $1500$gp & X & ~ & ~ & X \\\hline
+    ~ & Opal (Pale blue with green) & $1000$gp & $750$gp & $1500$gp & X & ~ & X & X \\\hline
+    ~ & Star ruby (Ruby with star) & $1000$gp & $750$gp & $1500$gp & X & ~ & ~ & X \\\hline
+    ~ & Star sapphire (Blue with star) & $1000$gp & $750$gp & $1500$gp & X & ~ & ~ & X \\\hline
+    ~ & Yellow Sapphire (Firey yellow) & $1000$gp & $750$gp & $1500$gp & X & ~ & ~ & X \\\hline
+    \multicolumn{9}{|l|}{\textbf{5000 GP Gemstones}}\\\hline
+    ~ & Black Sapphire (Lustrous black) & $5000$gp & $3750$gp & $7500$gp & X & ~ & ~ & X \\\hline
+    ~ & Diamond (Transparent) & $5000$gp & $3750$gp & $7500$gp & X & ~ & ~ & X \\\hline
+    ~ & Jacinth (Firey orange) & $5000$gp & $3750$gp & $7500$gp & X & ~ & ~ & X \\\hline
+    ~ & Ruby (Shades of red) & $5000$gp & $3750$gp & $7500$gp & X & ~ & ~ & X \\\hline
+    \multicolumn{9}{|l|}{\textbf{Powdering of Gems}}\\\hline
+    ~ & $10$gp Gemstones & $20$gp & $15$gp & $30$gp & X & X & X & X \\\hline
+    ~ & $50$gp Gemstones & $70$gp & $52$gp & $105$gp & X & X & X & X \\\hline
+    ~ & $100$gp Gemstones & $150$gp & $113$gp & $225$gp & ~ & ~ & X & X \\\hline
+    ~ & $500$gp Gemstones & $600$gp & $450$gp & $900$gp & ~ & ~ & X & X \\\hline
+    ~ & $1000$gp Gemstones & $1500$gp & $1125$gp & $2250$gp & ~ & ~ & ~ & X \\\hline
+    ~ & $5000$gp Gemstones & $6000$gp & $4500$gp & $9000$gp & ~ & ~ & ~ & X \\\hline
+\end{tabularx}
+
+\paragraph{}
+Jewelry with stones already set (including rings, amulets, earrings, etc.), are readily available based on the gemstone availability, at the DM's discretion.
+Suggestions for gemstone values and descriptions are available in the DMG on page 134.
+
+\paragraph{}
+The \emph{Powdering of Gems} service is an as needed task as most places aren’t interested in keeping smashed up gemstones on hand.
+Some bigger locations may keep a few of the less valuable gems already powdered and bagged, but most places will do it on an as needed basis.
+\textbf{More often than not, the customer would need to provide the gem in addition to paying the fee listed in the chart.}
+
+\paragraph{}
+As with all locations, some services may have items not shown typically available on this chart or may offer services not typical for the area.
+These may come at a higher premium or be a service they only offer as a special reward for a job they need done as well.
+
+\paragraph{Important note:}
+\emph{Gem Shop} prices are based off a system of size vs. price. Gem prices are sold at full size (Default price in the DMG guide located on page 134) and as such the price by gem size can be altered to suit your needs. “I.e. Large = 1:1, Medium = 1:10, Small = 1:100, Tiny = 1:1000”.
+
+\paragraph{}
+To use this in an example for spell casting \emph{\textbf{Chromatic Orb} – 1st level, Evocation} requires \emph{a Diamond worth at least 50 gp} so in this case a default 1:1 Large Diamond is worth 5000 gp and as such “5000/50=100” so in this case a 1:100 Small diamond is worth the required 50 gp to cast the spell.
+
+
+\subsection{Gemstone Availability}
+\begin{tabularx}{\textwidth}{lXr}
+    \hline
+    \textbf{\textsc{Selection}} & \textbf{\textsc{Gemstones Available}} & \textbf{d\%}\\\hline
+    \textbf{Poor} & Less than ten $10$gp gemstones, and a single $50$gp gemstone. & $1-40$\\
+    \textbf{Fair} & Less than twenty $10$gp gemstone, less than ten $50$gp gemstones, and two $100$gp gemstones. & $41-80$\\
+    \textbf{Moderate} & Six of every basic $10$gp gemstone, less than twenty $50$gp gemstones, less than ten $100$gp gemstones, three $500$gp gemstones, and one gemstone of greater value than $500$gp. & $81-90$\\
+    \textbf{Wide} & Twelve of every basic $10$gp gemstone, Six of every basic $50$gp gemstone, less than twenty $100$gp gemstones, less than ten $500$gp gemstones, four gemstones of greater value than $500$gp. & $91-100$\\\hline
+\end{tabularx}
+
+
+
+\section{Potion Shop}
+\begin{tabularx}{\textwidth}{lrrr}
+    ~ & \textsc{Cheap} & \textsc{Normal} & \textsc{Expensive}\\
+    \textbf{Hard Sell (daily)} & $375$gp & $500$gp & $750$gp\\
+\end{tabularx}
+\emph{Hard Sell (daily) at $500$gp (Cheap: $375$gp, Expensive: 750)}
+\begin{tabularx}{\textwidth}{|p{0.1cm}lZZZYYYY|}
+    \hline
+    \multicolumn{2}{|l}{\textsc{Item Name}} & \textsc{Norm. Price} & \textsc{Cheap Price} & \textsc{Exp. Price} & \textsc{Short Stock} & \textsc{Rural} & \textsc{Urban} & \textsc{Prem.}\\\hline
+    \multicolumn{9}{|l|}{\textbf{Adventuring Gear}}\\\hline
+    ~ & Acid (vial) & $25$gp & $18$gp & $38$gp & ~ & X & X & X \\\hline
+    ~ & Alchemist's Fire (flask) & $50$gp & $38$gp & $75$gp & ~ & ~ & X & X \\\hline
+    ~ & Antitoxin (vial) & $50$gp & $38$gp & $75$gp & X & X & X & X \\\hline
+    ~ & Component Pouch & $25$gp & $18$gp & $38$gp & ~ & X & X & X \\\hline
+    ~ & Oil (flask) & $1$sp & $7$cp & $2$sp & ~ & X & X & X \\\hline
+    ~ & Perfume (vial) & $5$gp & $3$gp & $8$gp & ~ & ~ &`~ & X \\\hline
+    ~ & Poison, Basic (vial) & $100$gp & $75$gp & $150$gp & X & X & X & X \\\hline
+    ~ & Potion of Healing & $50$gp & $38$gp & $75$gp & X & X & X & X \\\hline
+    ~ & Vial & $1$gp & $7$sp & $2$gp & X & X & X & X \\\hline
+    \multicolumn{9}{|l|}{\textbf{Alchemy Ingredients}}\\\hline
+    ~ & Common & $3$sp & $2$sp & $5$sp & X & X & X & X \\\hline
+    ~ & Uncommon & $1$gp & $7$sp & $2$gp & X & X & X & X \\\hline
+    ~ & Rare & $10$gp & $7$gp & $15$gp & X & ~ & X & X \\\hline
+    ~ & Very Rare & $30$gp & $22$gp & $45$gp & X & ~ & ~ & X \\\hline
+    \multicolumn{9}{|l|}{\textbf{Tools}}\\\hline
+    \multicolumn{9}{|l|}{\textit{Artisan's Tools}}\\\hline
+    ~ & Alchemist's Supplies & $50$gp & $38$gp & $75$gp & ~ & ~ & X & X \\\hline
+    ~ & Brewer's Supplies & $20$gp & $15$gp & $30$gp & X & X & X & X \\\hline
+    ~ & Cook's Utensils & $1$gp & $7$sp & $2$gp & ~ & ~ & X & X \\\hline
+    \multicolumn{2}{|l}{Poisoner's Kit} & $50$gp & $38$gp & $75$gp & ~ & X & X & X \\\hline
+    \multicolumn{9}{|l|}{\textbf{Magic Items}}\\\hline
+    \multicolumn{9}{|l|}{\textit{Potions}}\\\hline
+    ~ & Common & $50$gp & $38$gp & $75$gp & X & X & X & X \\\hline
+    ~ & Uncommon & $250$gp & $175$gp & $375$gp & X & X & X & X \\\hline
+    ~ & Rare & $2500$gp & $1750$gp & $3750$gp & ~ & ~ & X & X \\\hline
+    ~ & Very Rare & $12500$gp & $9375$gp & $18750$gp & ~ & ~ & X & X \\\hline
+    ~ & Legendary & $62500$gp & $46875$gp & $93750$gp & ~ & ~ & ~ & X \\\hline
+    \multicolumn{9}{|l|}{\textbf{Miscellaneous}}\\\hline
+    ~ & Spell Components & See~Spell & (x0.75) & (x1.5) & X & X & X & X \\\hline
+\end{tabularx}
+
+\subsection{Potion Availability}
+\begin{tabularx}{\textwidth}{lXr}
+    \hline
+    \textbf{\textsc{Selection}} & \textbf{\textsc{Potion Names}} & \textbf{d\%}\\\hline
+    \textbf{Poor} & (C) Healing, Climbing, (U) Water Breathing, (R) Gaseous Form & $1-25$\\
+    \textbf{Fair} & (U) Greater Healing, Resistance, (R) Elixir of Health, Diminution & $26-50$\\
+    \textbf{Moderate} & (U) Animal Friendship, Growth, Potion of Poison (disguised), (R) Heroism, Superior Healing, Frost/Stone Giant Strength, Clairvoyance & $51-80$\\
+    \textbf{Wide} & (U) Oil of Slipperiness, Philter of Love, Fire Breath, (R) Oil of Etherealness, Fire Giant Strength, Invulnerability, Mind Reading & $81-100$\\\hline
+\end{tabularx}
+
+
+
+\section{Arcane Shop}
+\begin{tabularx}{\textwidth}{lrrr}
+    ~ & \textsc{Cheap} & \textsc{Normal} & \textsc{Expensive}\\
+    \textbf{Hard Sell (daily)} & $562$gp & $750$gp & $1125$gp\\
+    \textbf{Selling Cap (daily)} & $1125$gp & $1500$gp & $2260$gp\\
+\end{tabularx}
+\begin{tabularx}{\textwidth}{|p{0.1cm}lZZZYYYY|}
+    \hline
+    \multicolumn{2}{|l}{\textsc{Item Name}} & \textsc{Norm. Price} & \textsc{Cheap Price} & \textsc{Exp. Price} & \textsc{Short Stock} & \textsc{Rural} & \textsc{Urban} & \textsc{Prem.}\\\hline
+    \multicolumn{9}{|l|}{\textbf{Weapons}}\\\hline
+    \multicolumn{9}{|l|}{\textit{Simple Melee Weapons}}\\\hline
+    ~ & Quarterstaff & $2$sp & $1$sp & $3$sp & X & X & X & X \\\hline
+    \multicolumn{9}{|l|}{\textbf{Adventuring Gear}}\\\hline
+    ~ & Abacus & ? & ? & ? & ~ & ~ & X & X \\\hline
+    \multicolumn{9}{|l|}{\textit{Arcane Focus}}\\\hline
+    \multicolumn{2}{|l}{Crystal} & $10$gp & $7$gp & $15$gp & X & X & X & X \\\hline
+    \multicolumn{2}{|l}{Orb} & $20$gp & $15$gp & $30$gp & ~ & ~ & X & X \\\hline
+    \multicolumn{2}{|l}{Rod} & $10$gp & $7$gp & $15$gp & ~ & X & X & X \\\hline
+    \multicolumn{2}{|l}{Staff} & $5$gp & $3$gp & $8$gp & X & X & X & X \\\hline
+    \multicolumn{2}{|l}{Wand} & $10$gp & $7$gp & $15$gp & X & X & X & X \\\hline
+    ~ & Bottle, glass & $2$gp & $1$gp & $3$gp & ~ & X & X & X \\\hline
+    ~ & Candle & $1$cp & $1$cp & $2$cp & X & X & X & X \\\hline
+    ~ & Case, Map or Scroll & $1$gp & $7$sp & $2$gp & ~ & X & X & X \\\hline
+    ~ & Component Pouch & $25$gp & $18$gp & $38$gp & ? & ? & ? & ? \\\hline
+    \multicolumn{9}{|l|}{\textit{Druidic Focus}}\\\hline
+    \multicolumn{2}{|l}{Sprig of Mistletoe} & $1$gp & $7$sp & $2$gp & X & X & X & X \\\hline
+    \multicolumn{2}{|l}{Totem} & $1$gp & $7$sp & $2$gp & ~ & ~ & X & X \\\hline
+    \multicolumn{2}{|l}{Wooden Staff} & $5$gp & $3$gp & $8$gp & X & X & X & X \\\hline
+    \multicolumn{2}{|l}{Yew Wand} & $10$gp & $7$gp & $15$gp & ~ & X & X & X \\\hline
+    ~ & Hourglass & $25$gp & $18$gp & $38$gp & ~ & ~ & ~ & X \\\hline
+    ~ & Ink (1 ounce bottle) & $10$gp & $7$gp & $15$gp & ~ & X & X & X \\\hline
+    ~ & Ink Pen & $2$cp & $1$cp & $3$cp & ~ & X & X & X \\\hline
+    ~ & Paper (one sheet) & $2$sp & $1$sp & $3$sp & ~ & ~ & X & X \\\hline
+    ~ & Parchment (one sheet) & $1$sp & $7$cp & $2$sp & ~ & X & X & X \\\hline
+    ~ & Pouch & $5$sp & $3$sp & $8$sp & ~ & X & X & X \\\hline
+    ~ & Robes & $1$gp & $7$sp & $2$gp & ~ & ~ & X & X \\\hline
+    ~ & Spellbook & $50$gp & $38$gp & $75$gp & ~ & X & X & X \\\hline
+    ~ & Vial & $1$gp & $7$sp & $2$gp & ~ & X & X & X \\\hline
+    \multicolumn{9}{|l|}{\textbf{Tool}}\\\hline
+    \multicolumn{9}{|l|}{\textit{Artisan's Tools}}\\\hline
+    \multicolumn{2}{|l}{Alchemist's Supplies} & $50$gp & $38$gp & $75$gp & ~ & X & X & X \\\hline
+    \multicolumn{2}{|l}{Calligrapher's Supplies} & $10$gp & $7$gp & $15$gp & ~ & ~ & X & X \\\hline
+    \multicolumn{9}{|l|}{\textbf{Musical Instrument}}\\\hline
+    ~ & Lute & $35$gp & $26$gp & $53$gp & ~ & ~ & X & X \\\hline
+    ~ & Lyre & $30$gp & $22$gp & $45$gp & ~ & ~ & ~ & X \\\hline
+    \multicolumn{9}{|l|}{\textbf{Magic Items}}\\\hline
+    \multicolumn{9}{|l|}{\textit{Spell Scrolls/ Gems}}\\\hline
+    \multicolumn{2}{|l}{Common (Cantrip)} & $50$gp & $38$gp & $75$gp & X & X & X & X \\\hline
+    \multicolumn{2}{|l}{Common (Level 1)} & $100$gp & $75$gp & $150$gp & X & X & X & X \\\hline
+    \multicolumn{2}{|l}{Uncommon (Level 2)} & $250$gp & $187$gp & $375$gp & ~ & ~ & X & X \\\hline
+    \multicolumn{2}{|l}{Uncommon (Level 3)} & $500$gp & $375$gp & $750$gp & ~ & ~ & X & X \\\hline
+    \multicolumn{2}{|l}{Rare (Level 4)} & $2500$gp & $1875$gp & $3750$gp & ~ & ~ & ~ & X \\\hline
+    \multicolumn{2}{|l}{Rare (Level 5)} & $5000$gp & $3750$gp & $7500$gp & ~ & ~ & ~ & X \\\hline
+    \multicolumn{9}{|l|}{\textbf{Services}}\\\hline
+    ~ & Magic Appraisal (Identify) & $100$gp & $75$gp & $150$gp & X & X & X & X \\\hline
+    \multicolumn{9}{|l|}{\textbf{Miscellaneous}}\\\hline
+    ~ & Spell Components & See~Spell & (x0.75) & (x1.5) & ~ & X & X & X \\\hline
+\end{tabularx}
+
+\subsection{SpellScroll/Gem Availability}
+\begin{tabularx}{\textwidth}{lXXr}
+    \hline
+    \textbf{\textsc{Selection}} & \textbf{\textsc{Offensive Spells}} & \textbf{\textsc{Support Spells}} & \textbf{d\%}\\\hline
+    \textbf{Poor} & (0) Shocking Grasp, (1) Burning Hands, (2) Melf's Acid Arrow, (3) Lightning Bolt, (4) Ice Storm, (5) Hold Monster & (0) Mending, (1) Alarm, (2) Magic Weapon, (3) Haste, (4) Mordenkainen's Faithful Hound, (5) Bigby's Hand & $1-25$\\
+    \textbf{Fair} & (0) Fire Bolt, (1) Magic Missile, (2) Flaming Sphere, (3) Fire Ball, (4) Wall of Fire, (5) Cone of Cold (Inc. Poor availability list) & (0) Mage Hand, (1) Tensor's Floating Disc, (2) Invisibility, (3) Fly, (4) Stoneskin, (5) Teleportation Circle (Inc. Poor availability list) & $26-60$\\
+    \textbf{Moderate} & (0) Acid Splash, Chill Touch, (1) Chromatic Orb, Sleep, (2) Hold Person, Scorching Ray, (3) Bestow Curse, Slow, (4) Phantasmal Killer, Confusion, (5) Cloudkill, Conjure Elemental (Inc. Poor/Fair availability list) & (0) Light, Message, (1) Detect Magic, Jump, (2) Darkness, Levitate, (3) Dispel Magic, Water Breathing, (4) Arcane Eye, Greater Invisibility (5) Scrying, Telekenisis (Inc. Poor/Fair availability list) & $61-80$\\
+    \textbf{Wide} & (0) Friends, Minor Illusion, Poison Spray, (1) Color Spray, Ray of Sickness, Tasha's Hideous Laughter, (2) Blindness/Deafness, Cloud of Daggers, Ray of Enfeeblement, (3) Hypnotic Pattern, Sleet Storm, Vampiric Touch (4) Conjure Minor Elementals, Fire Shield, Otiluke's Resilient Sphere, (5) Dominate Person, Gaes, Planar Binding (Inc. Poor/Fair/Moderate availability list) & (0) Blade Ward, Dancing Lights, Prestidigitation, (1) Feather Fall, Identify, Mage Armor, (2) See Invisibility, Arcane Lock, Knock, (3) Leomund's Tiny Hut, Magic Circle, Tongues, (4) Dimension Door, Leomund's Secret Chest, Polymorph, (5) Legend Lore, Rary's Telepathic Bond, Wall of Stone (Inc. Poor/Fair availability list) & $81-95$\\
+    \textbf{Full} & (All Wizard Spells Level 1-5 and cantrips) & (All Wizard Spells Level 1-5 and cantrips) & $96-100$\\\hline
+\end{tabularx}
+
+
+
+\section{Common Meal \& Inn Prices}
+\emph{\textbf{[color] Dragon Steak:} The meat comes from the kind of dragon you choose. Flavor varies by type. (Ex. Red isspicy, Green is sour, etc. \\ \textbf{Adventurer’s Steak:} The meat is of unknown origin, so no one can tell what the meat came from, but it’s assumed safe to eat.}
+\begin{tabularx}{\textwidth}{|p{0.1cm}lZZZYYYY|}
+    \hline
+    \multicolumn{2}{|l}{\textsc{Item Name}} & \textsc{Norm. Price} & \textsc{Cheap Price} & \textsc{Exp. Price} & \textsc{Short Stock} & \textsc{Rural} & \textsc{Urban} & \textsc{Prem.}\\\hline
+    \multicolumn{9}{|l|}{\textbf{Typical Breakfast Options}}\\\hline
+    \multicolumn{9}{|l|}{\textit{Commoner}}\\\hline
+    ~ & “Meat” Stick & $3$cp & $2$cp & $5$cp & ~ & X & X & X \\\hline
+    ~ & Roasted Locusts & $3$cp & $2$cp & $5$cp & ~ & X & ~ & ~ \\\hline
+    ~ & Cheese Omelet & $4$cp & $3$cp & $6$cp & ~ & X & X & X \\\hline
+    ~ & Ham \& Cheese on Rye & $5$cp & $3$cp & $8$cp & X & X & X & X \\\hline
+    \multicolumn{9}{|l|}{\textit{Merchant}}\\\hline
+    ~ & Bacon \& Egg Sandwich & $3$sp & $2$sp & $5$sp & ~ & X & X & X \\\hline
+    ~ & Omelet “your’ Way & $3$sp & $2$sp & $5$sp & ~ & X & X & ~ \\\hline
+    ~ & Bloodhawk Eggs & $4$sp & $3$sp & $6$sp & X & X & X & X \\\hline
+    ~ & Bacon Stuffed Bread & $5$sp & $3$sp & $8$sp & X & ~ & X & X \\\hline
+    \multicolumn{9}{|l|}{\textit{Noble}}\\\hline
+    ~ & Frittata \& Herbs & $1$gp & $7$sp & $2$gp & X & ~ & X & X \\\hline
+    ~ & Bacon \& Owlbear Eggs & $2$gp & $1$gp & $3$gp & X & ~ & X & X \\\hline
+    ~ & Boar Ham Steak \& Eggs & $2$gp & $1$gp & $3$gp & X & ~ & X & X \\\hline
+    ~ & Truffle Omelet & $3$gp & $2$gp & $5$gp & X & ~ & ~ & X \\\hline
+    \multicolumn{9}{|l|}{\textbf{Typical Lunch Options}}\\\hline
+    \multicolumn{9}{|l|}{\textit{Commoner}}\\\hline
+    ~ & Stockpot Stew/ Soup & $4$cp & $3$cp & $6$cp & ~ & X & X & X \\\hline
+    ~ & “Adventurer’s” Steak & $4$cp & $3$cp & $6$cp & ~ & X & X & X \\\hline
+    ~ & Minced Pork & $5$cp & $3$cp & $8$cp & X & X & X & X \\\hline
+    ~ & Roast Goat \& Cheese & $6$cp & $4$cp & $9$cp & X & X & X & X \\\hline
+    \multicolumn{9}{|l|}{\textit{Merchant}}\\\hline
+    ~ & Roast Lamb \& Cheese & $4$sp & $3$sp & $6$sp & ~ & X & X & X \\\hline
+    ~ & Boar Tenderloin & $5$sp & $3$sp & $8$sp & ~ & X & X & X \\\hline
+    ~ & Baked Goose Breast & $5$sp & $3$sp & $8$sp & X & X & X & X \\\hline
+    ~ & Grilled Salmon & $6$sp & $4$sp & $9$sp & X & X & X & X \\\hline
+    \multicolumn{9}{|l|}{\textit{Noble}}\\\hline
+    ~ & Rack of Lamb & $2$gp & $1$gp & $3$gp & ~ & X & X & X \\\hline
+    ~ & Shellfish Platter & $3$gp & $2$gp & $5$gp & X & X & X & X \\\hline
+    ~ & Dragon Turtle Soup & $4$gp & $3$gp & $6$gp & X & X & X & X \\\hline
+    ~ & Roc Meat Portion & $5$gp & $3$gp & $8$gp & X & ~ & X & X \\\hline
+    \multicolumn{9}{|l|}{\textbf{Typical Dinner Options}}\\\hline
+    \multicolumn{9}{|l|}{\textit{Commoner}}\\\hline
+    ~ & Stockpot Stew/ Soup & $4$cp & $3$cp & $6$cp & X & ~ & X & X \\\hline
+    ~ & Grave of Small Birds & $5$cp & $3$cp & $8$cp & X & ~ & X & X \\\hline
+    ~ & ‘Tasha’s Hideous’ Stew & $5$cp & $3$cp & $8$cp & X & ~ & X & X \\\hline
+    ~ & Rabbit \& Potato Plate & $6$cp & $4$cp & $9$cp & X & ~ & ~ & X \\\hline
+    \multicolumn{9}{|l|}{\textit{Merchant}}\\\hline
+    ~ & Hunter’s Pie & $4$sp & $3$sp & $6$sp & ~ & X & X & X \\\hline
+    ~ & Bloodhawk Breast & $5$sp & $3$sp & $8$sp & ~ & X & X & X \\\hline
+    ~ & Crocodile Steak & $5$sp & $3$sp & $8$sp & X & X & X & X \\\hline
+    ~ & Roasted Bullywug Legs & $6$sp & $4$sp & $9$sp & X & ~ & X & X \\\hline
+    \multicolumn{9}{|l|}{\textit{Noble}}\\\hline
+    ~ & Buffalo Ribeye & $2$gp & $1$gp & $3$gp & ? & ? & ? & ? \\\hline
+    ~ & Sahuagin Caviar & $3$gp & $2$gp & $5$gp & ? & ? & ? & ? \\\hline
+    ~ & Owlbear Steak \& Eggs & $4$gp & $3$gp & $6$gp & X & ~ & X & X \\\hline
+    ~ & [color] Dragon Steak & $5$gp & $3$gp & $8$gp & X & ~ & ~ & X \\\hline
+    \multicolumn{9}{|l|}{\textbf{Room Prices, Inns/ Taverns}}\\\hline
+    ~ & Commoner (Poor $2$sp) & $5$cp & $3$cp & $8$cp & X & X & X & X \\\hline
+    ~ & Modest ($1$gp) & $1$sp & $7$cp & $2$sp & X & X & X & X \\\hline
+    ~ & Merchant (Comfortable $2$gp) & $1$gp & $7$sp & $2$gp & X & X & X & X \\\hline
+    ~ & Wealthy ($4$gp) & $2$gp & $1$gp & $3$gp & X & ~ & X & X \\\hline
+    ~ & Noble (Aristocratic $10$gp+) & $4$gp & $3$gp & $6$gp & X & ~ & ~ & X \\\hline
+\end{tabularx}
+
+\paragraph{General Notes}
+\begin{itemize}
+    \item Meal \& Inn prices are based on Chapter 5 of the PHB, “Lifestyle Expenses”. If you have a character who is a heavy drinker, maybe only one drink is included. I did not use the same page for Market Produce given the additions made.
+    \item All meals are served with a bread slice, a side \& drink unless a side is already listed beside it.
+\end{itemize}
+
+
+
+\section{Market Produce/Foods}
+\emph{\textbf{(S):} Denotes a sweet item.}
+\begin{tabularx}{\textwidth}{|p{0.1cm}lZZZYYYY|}
+    \hline
+    \multicolumn{2}{|l}{\textsc{Item Name}} & \textsc{Norm. Price} & \textsc{Cheap Price} & \textsc{Exp. Price} & \textsc{Short Stock} & \textsc{Rural} & \textsc{Urban} & \textsc{Prem.}\\\hline
+    \multicolumn{9}{|l|}{\textbf{Vendor/ Stand Items}}\\\hline
+    \multicolumn{9}{|l|}{\textit{Non-Alcoholic Drinks – Cup}}\\\hline
+    ~ & Coffee & $5$cp & $3$cp & $8$cp & ~ & X & X & X \\\hline
+    ~ & Goodberry “Wine” & $1$sp & $7$cp & $2$sp & X & X & X & X \\\hline
+    ~ & Fruit Juice (Varies) & $5$cp & $3$cp & $8$cp & X & ~ & X & X \\\hline
+    ~ & Milk (Local Variety) & $3$cp & $2$cp & $5$cp & X & X & X & X \\\hline
+    \multicolumn{9}{|l|}{\textit{Fruits – A Piece}}\\\hline
+    ~ & In Season & $1$cp & $1$cp & $2$cp & ~ & X & X & X \\\hline
+    ~ & Out of Season & $5$cp & $3$cp & $8$cp & X & ~ & ~ & X \\\hline
+    \multicolumn{9}{|l|}{\textit{Vegetables – Each/ Bushel}}\\\hline
+    ~ & Amaranth Leaf/ Greens & $5$cp & $3$cp & $8$cp & ~ & X & X & X \\\hline
+    ~ & Broccoli/ Cauliflower & $3$cp & $2$cp & $5$cp & ~ & X & X & X \\\hline
+    ~ & Cabbage/ Lettuce & $2$cp & $1$cp & $3$cp & ~ & X & X & X \\\hline
+    ~ & Fruit “Vegetable” & $5$cp & $3$cp & $8$cp & ~ & X & X & X \\\hline
+    ~ & Legumes & $4$cp & $3$cp & $6$cp & ~ & X & X & X \\\hline
+    ~ & Root Vegetable/ Tuber & $1$cp & $1$cp & $2$cp & ~ & X & X & X \\\hline
+    \multicolumn{9}{|l|}{\textit{Grains – Per lb./ Flour – 0.5 lb.}}\\\hline
+    ~ & Amaranth & $2$gp & $1$gp & $3$gp & X & ~ & ~ & X \\\hline
+    ~ & Barley/ Rye & $2$cp & $1$cp & $3$cp & ~ & X & X & X \\\hline
+    ~ & Oats & $5$sp & $3$sp & $8$sp & ~ & ~ & X & X \\\hline
+    ~ & Quinoa & $1$gp & $7$sp & $2$gp & ~ & ~ & X & X \\\hline
+    ~ & Rice & $5$cp & $3$cp & $8$cp & ~ & ~ & ~ & X \\\hline
+    ~ & Wheat & $1$sp & $7$cp & $2$sp & X & ~ & X & X \\\hline
+    \multicolumn{9}{|l|}{\textit{Baked Goods – Per Item}}\\\hline
+    ~ & Almond/ Sweet Roll (S) & $1$sp & $7$cp & $2$sp & X & ~ & X & X \\\hline
+    ~ & Seedcake & $5$cp & $3$cp & $8$cp & ~ & X & X & X \\\hline
+    ~ & Cheat/ Wheaten Loaf & $2$sp & $1$sp & $3$sp & X & ~ & X & X \\\hline
+    ~ & Cheese Danish & $1$sp & $7$cp & $2$sp & X & ~ & X & X \\\hline
+    ~ & Fruit Tart (S) & $2$sp & $1$sp & $3$sp & X & X & X & X \\\hline
+    ~ & Manchet Loaf & $1$gp & $7$sp & $2$gp & X & ~ & ~ & X \\\hline
+    ~ & Quince Bread Slice (S) & $2$sp & $1$sp & $3$sp & X & ~ & ~ & X \\\hline
+    ~ & Rye Loaf & $2$cp & $1$cp & $3$cp & ~ & X & X & X \\\hline
+    \multicolumn{9}{|l|}{\textit{Protein – Per lb.}}\\\hline
+    ~ & Beef/ Buffalo/ Deer & $3$sp & $2$sp & $5$sp & ~ & X & X & X \\\hline
+    ~ & Boar/ Chicken/ Pork & $8$cp & $6$cp & $12$cp & ~ & X & X & X \\\hline
+    ~ & Dried/ Salted Meat & $5$sp & $3$sp & $8$sp & ~ & X & X & X \\\hline
+    ~ & Egg (for 6) & $3$cp & $2$cp & $5$cp & ~ & X & X & X \\\hline
+    ~ & Fish & $6$sp & $4$sp & $9$sp & X & ~ & X & X \\\hline
+    ~ & Insects/ Small Game & $4$cp & $3$cp & $6$cp & ~ & X & X & X \\\hline
+    ~ & Goat & $1$sp & $7$cp & $2$sp & ~ & X & X & X \\\hline
+    ~ & Lamb & $1$gp & $7$sp & $2$gp & X & ~ & X & X \\\hline
+    ~ & Shellfish (Oceanic) & $2$gp & $1$gp & $3$gp & X & ~ & ~ & X \\\hline
+    \multicolumn{9}{|l|}{\textit{Cheeses – Per 0.5 lb.}}\\\hline
+    ~ & Brie & $2$sp & $1$sp & $3$sp & X & X & X & X \\\hline
+    ~ & Cheddar & $1$gp & $7$sp & $2$gp & ~ & ~ & ~ & X \\\hline
+    ~ & Cottage & $4$cp & $3$cp & $6$cp & ~ & X & X & X \\\hline
+    ~ & Parmesan & $5$sp & $3$sp & $8$sp & ~ & ~ & X & X \\\hline
+    ~ & Specialty & $2$gp & $1$gp & $3$gp & X & X & X & X \\\hline
+    \multicolumn{9}{|l|}{\textit{Spices – Per 0.5 Ounce Ground}}\\\hline
+    ~ & Cinnamon & $1$sp & $7$cp & $2$sp & X & ~ & X & X \\\hline
+    ~ & Coriander & $3$cp & $2$cp & $5$cp & X & ~ & X & X \\\hline
+    ~ & Cumin & $7$cp & $4$cp & $13$cp & X & ~ & X & X \\\hline
+    ~ & Garlic & $2$cp & $1$cp & $3$cp & X & ~ & X & X \\\hline
+    ~ & Mustard & $1$sp & $7$cp & $2$sp & X & ~ & X & X \\\hline
+    ~ & Nutmeg & $8$cp & $6$cp & $12$cp & X & ~ & X & X \\\hline
+    ~ & Pepper & $5$cp & $3$cp & $8$cp & X & X & X & X \\\hline
+    ~ & Salt & $6$cp & $4$cp & $9$cp & X & X & X & X \\\hline
+    ~ & Specialty & $2$sp & $1$sp & $3$sp & X & ~ & ~ & X \\\hline
+\end{tabularx}
+
+
+\section{Creature Parts Values}
+\begin{tabularx}{\textwidth}{|p{0.1cm}lZZZYYYY|}
+    \hline
+    \multicolumn{2}{|l}{\textsc{Item Name}} & \textsc{Norm. Price} & \textsc{Cheap Price} & \textsc{Exp. Price} & \textsc{Short Stock} & \textsc{Rural} & \textsc{Urban} & \textsc{Prem.}\\\hline
+    \multicolumn{9}{|l|}{\textbf{Selling Value (Creature XP \%)}}\\\hline
+    ~ & CR: 0 – 6 & 1\% & 1\% & 1.5\% & ~ & ~ & ~ & ~ \\\hline
+    ~ & CR: 7 – 12 & 5\% & 3\% & 8\% & ~ & ~ & ~ & ~ \\\hline
+    ~ & CR: 13 – 18 & 10\% & 7\% & 15\% & ~ & ~ & ~ & ~ \\\hline
+    ~ & CR: 19 – 24 & 25\% & 18\% & 38\% & ~ & ~ & ~ & ~ \\\hline
+    ~ & CR: 25+ & 50\% & 38\% & 75\% & ~ & ~ & ~ & ~ \\\hline
+\end{tabularx}
+
+\section{High End Clothing}
+\emph{Cost below is based on fine fabric prices for “Fine Clothes” option. Unless PCs provide material, add the parts value from the chart above x2 for item cost based on creature CR. If they provide material, add the sell value to the total. \textbf{These custom items do not improve/ hinder AC.} Any item that typically has a lining has a cloth lining as part of the price.}
+\begin{tabularx}{\textwidth}{|p{0.1cm}lZZZYYYY|}
+    \hline
+    \multicolumn{2}{|l}{\textsc{Item Name}} & \textsc{Norm. Price} & \textsc{Cheap Price} & \textsc{Exp. Price} & \textsc{Short Stock} & \textsc{Rural} & \textsc{Urban} & \textsc{Prem.}\\\hline
+    \multicolumn{9}{|l|}{\textbf{Custom Clothing Items}}\\\hline
+    ~ & Bandolier & $8$gp & $6$gp & $12$gp & X & ~ & X & X \\\hline
+    ~ & Belt & $2$gp & $1$gp & $3$gp & X & ~ & X & X \\\hline
+    ~ & “Better” Backpack & $4$gp & $3$gp & $6$gp & X & ~ & X & X \\\hline
+    ~ & Blouse & $1$gp & $7$sp & $2$gp & X & ~ & X & X \\\hline
+    ~ & Breeches & $1$gp & $7$sp & $2$gp & X & ~ & X & X \\\hline
+    ~ & Boots & $4$gp & $3$gp & $6$gp & X & ~ & X & X \\\hline
+    ~ & Bow Tie & $5$sp & $3$sp & $8$sp & X & ~ & X & X \\\hline
+    ~ & Cloak/ (Mantle, -$1$gp) & $4$gp & $3$gp & $6$gp & X & ~ & X & X \\\hline
+    ~ & Coat & $5$gp & $3$gp & $8$gp & X & ~ & X & X \\\hline
+    ~ & Coin Purse & $1$gp & $7$sp & $2$gp & X & ~ & X & X \\\hline
+    ~ & Corset & $3$gp & $2$gp & $5$gp & X & ~ & X & X \\\hline
+    ~ & Dress & $7$gp & $4$gp & $13$gp & X & ~ & X & X \\\hline
+    ~ & Dress Pants & $2$gp & $1$gp & $3$gp & X & ~ & X & X \\\hline
+    ~ & Dress Shirt & $1$gp & $7$sp & $2$gp & X & ~ & X & X \\\hline
+    ~ & Dress Shoes & $3$gp & $2$gp & $5$gp & X & ~ & X & X \\\hline
+    ~ & Ghillies (Dance Shoes) & $2$gp & $1$gp & $3$gp & X & ~ & X & X \\\hline
+    ~ & Gloves & $1$gp & $7$sp & $2$gp & X & ~ & X & X \\\hline
+    ~ & Hat & $2$gp & $1$gp & $3$gp & X & ~ & X & X \\\hline
+    ~ & Jacket & $4$gp & $3$gp & $6$gp & X & ~ & X & X \\\hline
+    ~ & Jerkin/ (Tabard, +$1$gp) & $2$gp & $1$gp & $3$gp & X & ~ & X & X \\\hline
+    ~ & Pouch & $1$gp & $7$sp & $2$gp & X & ~ & X & X \\\hline
+    ~ & Robe & $5$gp & $3$gp & $8$gp & X & ~ & X & X \\\hline
+    ~ & Sandals & $3$gp & $2$gp & $5$gp & X & ~ & X & X \\\hline
+    ~ & Scarf & $5$sp & $3$sp & $8$sp & X & ~ & X & X \\\hline
+    ~ & Skirt/ (Kilt +$1$gp) & $3$gp & $2$gp & $5$gp & X & ~ & X & X \\\hline
+    ~ & Swimwear & $1$gp & $7$sp & $2$gp & X & ~ & X & X \\\hline
+    ~ & Tie & $5$sp & $3$sp & $8$sp & X & ~ & X & X \\\hline
+    ~ & Tunic & $5$sp & $3$sp & $8$sp & X & ~ & X & X \\\hline
+    ~ & Undergarments & $5$sp & $3$sp & $8$sp & X & ~ & X & X \\\hline
+    ~ & Vests & $3$gp & $2$gp & $5$gp & X & ~ & X & X \\\hline
+    \multicolumn{9}{|l|}{\textbf{Extras}}\\\hline
+    \multicolumn{9}{|l|}{\textit{Closure Devices (Options)}}\\\hline
+    ~ & Buckles & $1$sp & $7$cp & $2$sp & X & ~ & X & X \\\hline
+    ~ & Snaps & $5$sp & $3$sp & $8$sp & X & ~ & X & X \\\hline
+    ~ & Embroidery (per foot) & $2$gp & $1$gp & $3$gp & X & ~ & X & X \\\hline
+    ~ & Linen Cloth Construction & +$1$gp & +$7$sp & +$2$gp & X & ~ & X & X \\\hline
+    \multicolumn{9}{|l|}{\textit{Lining (Material Options)}}\\\hline
+    ~ & Fur & $3$gp & $2$gp & $5$gp & X & ~ & X & X \\\hline
+    ~ & Leather (Basic) & $4$gp & $3$sp & $6$gp & X & ~ & X & X \\\hline
+    ~ & Leather (Specialty) & +CR\%~N. & +CR\%~L. & +CR\%~H. & X & ~ & X & X \\\hline
+    ~ & Silk & $3$gp & $2$gp & $5$gp & X & ~ & X & X \\\hline
+    \multicolumn{9}{|l|}{\textit{Misc. (At vendor’s Discretion)}}\\\hline
+    ~ & Pockets (flaps +$2$sp/ pocket) & $1$gp & $7$sp & $2$gp & X & ~ & X & X \\\hline
+\end{tabularx}
+
+
+\section{Leather Armor Pieces}
+\emph{For other armors item prices, divide the full price by 10 (leather armor price) and multiply parts by that.}
+\begin{tabularx}{\textwidth}{|p{0.1cm}lZZZYYYY|}
+    \hline
+    \multicolumn{2}{|l}{\textsc{Item Name}} & \textsc{Norm. Price} & \textsc{Cheap Price} & \textsc{Exp. Price} & \textsc{Short Stock} & \textsc{Rural} & \textsc{Urban} & \textsc{Prem.}\\\hline
+    \multicolumn{9}{|l|}{\textbf{Custom Armor Parts}}\\\hline
+    ~ & Bracers & $5$sp & $3$sp & $8$sp & X & ~ & X & X \\\hline
+    ~ & Breastplate & $3$gp & $2$gp & $5$gp & X & ~ & ~ & X \\\hline
+    ~ & Boots & $1$gp & $3$gp & $6$gp & X & ~ & X & X \\\hline
+    ~ & Cloak/ (Mantle, -$1$gp) & $6$gp & $4$gp & $9$gp & X & ~ & ~ & X \\\hline
+    ~ & Cuisse (Thigh Armor) & $1$gp & $7$sp & $2$gp & X & ~ & X & X \\\hline
+    ~ & Full Arm Armor (Pair) & $1$gp & $7$sp & $2$gp & X & ~ & ~ & X \\\hline
+    ~ & Full Leg Armor (Pair) & $2$gp & $1$gp & $3$gp & X & ~ & ~ & X \\\hline
+    ~ & Gauntlets & $1$gp & $7$sp & $2$gp & X & ~ & X & X \\\hline
+    ~ & Gloves & $5$sp & $3$sp & $8$sp & X & ~ & X & X \\\hline
+    ~ & Gorget (Neck) & $5$sp & $3$sp & $8$sp & X & ~ & X & X \\\hline
+    ~ & Greaves (Lower Leg) & $1$gp & $7$sp & $2$gp & X & ~ & X & X \\\hline
+    ~ & Harness (Chest \& Back), Extra & $7$gp & $4$gp & $13$gp & X & ~ & ~ & X \\\hline
+    ~ & Helmet & $2$gp & $1$gp & $3$gp & X & ~ & X & X \\\hline
+    ~ & Pauldrons (Shoulders) & $1$gp & $7$sp & $2$gp & X & ~ & ~ & X \\\hline
+    ~ & Sabatons (Feet) & $5$sp & $3$sp & $8$sp & X & ~ & X & X \\\hline
+    \multicolumn{9}{|l|}{\textbf{Custom Accessories}}\\\hline
+    ~ & Buckler (1 Unit) & $8$gp & $6$gp & $12$gp & X & X & X & X \\\hline
+    ~ & Quiver (1 Unit) & $1$gp & $7$sp & $2$gp & X & X & X & X \\\hline
+    ~ & Sheathe (See Unit Note) & $8$sp & $6$sp & $12$sp & X & X & X & X \\\hline
+\end{tabularx}
+
+
+\section{Special Crafting Materials}
+\emph{This material list comes from the City and Wild “Pay What You Want” (not mine) addition on DMsguild. Premium Locale Z denotes \textbf{Very Rare Material}.}
+\begin{tabularx}{\textwidth}{|p{0.1cm}lZZZYYYY|}
+    \hline
+    \multicolumn{2}{|l}{\textsc{Item Name}} & \textsc{Norm. Price} & \textsc{Cheap Price} & \textsc{Exp. Price} & \textsc{Short Stock} & \textsc{Rural} & \textsc{Urban} & \textsc{Prem.}\\\hline
+    \multicolumn{9}{|l|}{\textbf{Name (Per unit Price)}}\\\hline
+    ~ & Adamantite & $200$gp & $100$gp & $300$gp                        & X & ~ & X & X \\\hline
+    ~ & Aerocrystal & $400$gp & $300$gp & $600$gp                       & X & ~ & ~ & X \\\hline
+    ~ & Asmoroch Wood & $400$gp & $300$gp & $600$gp                     & X & ~ & ~ & X \\\hline
+    ~ & Beast Feathers (CR Values) & CR\%~N. & CR\%~L. & CR\%~H.  & X & ~ & ~ & X \\\hline
+    ~ & Bone (CR Values) & CR\%~N. & CR\%~L. & CR\%~H.            & X & X & X & X \\\hline
+    ~ & Chitin (CR Values) & CR\%~N. & CR\%~L. & CR\%~H.          & X & ~ & X & X \\\hline
+    ~ & Cold Iron & $100$gp & $60$gp & $200$gp                          & X & X & X & X \\\hline
+    ~ & Coral & $100$gp & $60$gp & $200$gp                              & X & X & X & X \\\hline
+    ~ & Creature Hide (CR Values) & CR\%~N. & CR\%~L. & CR\%~H.   & X & X & X & X \\\hline
+    ~ & Creature Scales (CR Values) & CR\%~N. & CR\%~L. & CR\%~H. & X & ~ & X & X \\\hline
+    ~ & Darksteel & $200$gp & $100$gp & $300$gp                         & X & ~ & X & X \\\hline
+    ~ & Darkwood & $100$gp & $60$gp & $300$gp                           & X & X & X & X \\\hline
+    ~ & Dwarvenstone & $400$gp & $300$gp & $600$gp                      & X & ~ & ~ & X \\\hline
+    ~ & Eternal Ice & $400$gp & $300$gp & $600$gp                       & X & ~ & ~ & X \\\hline
+    ~ & Ignum & $400$gp & $300$gp & $600$gp                             & X & ~ & ~ & X \\\hline
+    ~ & Infernal Leather & $800$gp & $600$gp & $1200$gp                 & X & ~ & ~ & Z \\\hline
+    ~ & Infernal Steel & $800$gp & $600$gp & $1200$gp                   & X & ~ & ~ & Z \\\hline
+    ~ & Leafweave & $100$gp & $60$gp & $200$gp                          & X & X & X & X \\\hline
+    ~ & Mithril & $200$gp & $100$gp & $300$gp                           & X & ~ & X & X \\\hline
+    ~ & Obsidian & $200$gp & $100$gp & $300$gp                          & X & ~ & X & X \\\hline
+    ~ & Orichalum & $400$gp & $300$gp & $600$gp                         & X & ~ & ~ & X \\\hline
+    ~ & Plague Wood & $200$gp & $100$gp & $300$gp                       & X & ~ & X & X \\\hline
+    ~ & Shadowsilk (CR Values) & CR\%~N. & CR\%~L. & CR\%~H.      & X & ~ & X & X \\\hline
+    ~ & Shadowfell Linen & $800$gp & $600$gp & $1200$gp                 & X & ~ & ~ & Z \\\hline
+    ~ & Spiritual Wood & $200$gp & $100$gp & $300$gp                    & X & ~ & X & X \\\hline
+    ~ & Stellar Iron & $800$gp & $600$gp & $1200$gp                     & X & ~ & ~ & Z \\\hline
+\end{tabularx}
+
+\paragraph{Availability:}
+Weapons and Armor Sets made of the above list of materials will only be found in Premium Locales. Individual item availability is up to you.
+
+\paragraph{Pricing (Full Sets \& Individual Items):}
+Take the item cost and add the total units cost to it to get the custom item price.
+
+\newpage
+
+\paragraph{Unit uses/how much you need:}
+~
+\begin{tabularx}{0.7\textwidth}{ll}
+    \textsc{1 Unit:}  & 2 Daggers, 1 Short Sword or Short Bow, etc.\\
+    \textsc{2 Units:} & Small Size Armor, Long Sword or Long Bow, etc.\\
+    \textsc{3 Units:} & Medium Size Armor, Great Sword, etc.\\
+    \textsc{4 Units:} & Large Size Armor, Warhammer, etc.\\
+\end{tabularx}
+
+
+\section{Tattoo Shop}
+\emph{ Original PDF containing Tattoo Information from GMBinder (not mine).  If the subject provides the ink, 10 – 30\% of the ink cost will be added for the tattooist using their equipment.}
+\begin{tabularx}{\textwidth}{|p{0.1cm}lZZZYYYY|}
+    \hline
+    \multicolumn{2}{|l}{\textsc{Item Name}} & \textsc{Norm. Price} & \textsc{Cheap Price} & \textsc{Exp. Price} & \textsc{Short Stock} & \textsc{Rural} & \textsc{Urban} & \textsc{Prem.}\\\hline
+    \multicolumn{9}{|l|}{\textbf{Specialty Inks, Price per Size}}\\\hline
+    \multicolumn{9}{|l|}{\textit{Beastial Ink}}\\\hline
+    ~ & Small & $125$gp & $163$gp & $190$gp & X & X & X & X \\\hline
+    ~ & Medium & $250$gp & $175$gp & $375$gp & X & ~ & X & X \\\hline
+    ~ & Large & $500$gp & $375$gp & $750$gp & X & ~ & ~ & X \\\hline
+    \multicolumn{9}{|l|}{\textit{Detection Ink (Colors Vary)}}\\\hline
+    ~ & Small & $1000$gp & $700$gp & $1500$gp & X & ~ & X & X \\\hline
+    ~ & Medium & $2000$gp & $1400$gp & $3000$gp & X & ~ & X & X \\\hline
+    ~ & Large & $4000$gp & $2800$gp & $6000$gp & X & ~ & ~ & X \\\hline
+    \multicolumn{9}{|l|}{\textit{Elemental Ink (Choice Varies)}}\\\hline
+    ~ & Small & $150$gp & $105$gp & $225$gp & X & X & X & X \\\hline
+    ~ & Medium & $300$gp & $210$gp & $450$gp & X & ~ & X & X \\\hline
+    ~ & Large & $600$gp & $420$gp & $900$gp & X & ~ & ~ & X \\\hline
+    \multicolumn{9}{|l|}{\textit{Glamor Ink (Choice Varies)}}\\\hline
+    ~ & Small & $100$gp & $70$gp & $150$gp & X & X & X & X \\\hline
+    ~ & Medium & $200$gp & $140$gp & $300$gp & X & ~ & X & X \\\hline
+    ~ & Large & $400$gp & $2800$gp & $600$gp & X & ~ & ~ & X \\\hline
+    \multicolumn{9}{|l|}{\textit{Glow Ink (Choice Varies)}}\\\hline
+    ~ & Small & $100$gp & $70$gp & $150$gp & X & X & X & X \\\hline
+    ~ & Medium & $200$gp & $140$gp & $300$gp & X & ~ & X & X \\\hline
+    ~ & Large & $400$gp & $280$gp & $600$gp & X & ~ & ~ & X \\\hline
+    \multicolumn{9}{|l|}{\textit{Metallic-Ink (Basic Metals)}}\\\hline
+    ~ & Small & $150$gp & $105$gp & $225$gp & X & X & X & X \\\hline
+    ~ & Medium & $300$gp & $210$gp & $450$gp & X & ~ & X & X \\\hline
+    ~ & Large & $600$gp & $420$gp & $900$gp & X & ~ & ~ & X \\\hline
+    \multicolumn{9}{|l|}{\textit{Mood Ink (Single Color)}}\\\hline
+    ~ & Small & $100$gp & $70$gp & $150$gp & X & X & X & X \\\hline
+    ~ & Medium & $200$gp & $140$gp & $300$gp & X & X & X & X \\\hline
+    ~ & Large & $400$gp & $280$gp & $600$gp & X & ~ & ~ & X \\\hline
+    \multicolumn{9}{|l|}{\textit{Prismatic Ink (Single Color)}}\\\hline
+    ~ & Small & $150$gp & $105$gp & $225$gp & X & X & X & X \\\hline
+    ~ & Medium & $300$gp & $210$gp & $450$gp & X & X & X & X \\\hline
+    ~ & Large & $600$gp & $420$gp & $900$gp & X & ~ & ~ & X \\\hline
+    \multicolumn{9}{|l|}{\textit{Shifting Ink (GM Choice)}}\\\hline
+    ~ & Small & $5000$gp & $3500$gp & $7500$gp & X & ~ & X & X \\\hline
+    ~ & Medium & $10000$gp & $7000$gp & $15000$gp & X & ~ & ~ & X \\\hline
+    ~ & Large & $20000$gp & $14000$gp & $30000$gp & X & ~ & ~ & X \\\hline
+    \multicolumn{9}{|l|}{\textit{Temporary Ink (Black Only)}}\\\hline
+    ~ & Small & $50$gp & $35$gp & $75$gp & X & X & X & X \\\hline
+    ~ & Medium & $100$gp & $70$gp & $150$gp & X & X & X & X \\\hline
+    ~ & Large & $200$gp & $140$gp & $300$gp & X & ~ & X & X \\\hline
+    \multicolumn{9}{|l|}{\textit{3-D Ink (Colors Vary)}}\\\hline
+    ~ & Small & $350$gp & $245$gp & $525$gp & X & ~ & X & X \\\hline
+    ~ & Medium & $700$gp & $490$gp & $1050$gp & X & ~ & X & X \\\hline
+    ~ & Large & $1400$gp & $980$gp & $2100$gp & X & ~ & ~ & X \\\hline
+    \multicolumn{9}{|l|}{\textbf{1 oz Bottles of Basic Colors}}\\\hline
+    ~ & Any Color & $15$gp & $10$gp & $23$gp & X & X & X & X \\\hline
+    \multicolumn{9}{|l|}{\textbf{Miscellaneous}}\\\hline
+    ~ & Full Ink Set & $200$gp & $140$gp & $300$gp & X & ~ & ~ & X \\\hline
+    ~ & Needle Set & $5$gp & $3$gp & $8$gp & X & ~ & X & X \\\hline
+    ~ & Medical Supplies & $30$gp & $22$gp & $45$gp & X & ~ & ~ & X \\\hline
+    ~ & Sketchbook & $25$gp & $18$gp & $38$gp & ~ & X & X & X \\\hline
+    \multicolumn{9}{|l|}{\textbf{Tools}}\\\hline
+    \multicolumn{9}{|l|}{\textit{Artisans Tools}}\\\hline
+    ~ & Tattooist’s Tools & $70$gp & $49$gp & $105$gp & X & ~ & ~ & X \\\hline
+\end{tabularx}
+
+
+
+\section{Tattoo Availability}
+\emph{Tattoo prices don’t include the price of ink which is shown in the previous table.}
+\begin{tabularx}{\textwidth}{|lZZZYYYY|}
+    \hline
+    \textsc{Item Name} & \textsc{Cost} & \textsc{Size} & \textsc{Complexity} & \textsc{Rural} & \textsc{Urban} & \textsc{Prem.} & \textsc{Special}\\\hline
+    All Seeing Eye & $2000$gp & Small & Average & ~ & X & X & ~ \\\hline 
+    Artisan’s Hands & $4000$gp & Small & Ornate & ~ & ~ & X & ~ \\\hline 
+    Eye of Darkvision & $2000$gp & Small & Average & ~ & X & X & ~ \\\hline 
+    Eye of Truesight & $4000$gp & Small & Ornate  & ~ & X & X & ~ \\\hline 
+    Eye of the Seer & $2000$gp  & Small   & Average & ~ & X & X & ~ \\\hline 
+    Elemental Fist Tattoo(s)& $4000$gp  & Medium  & Average & ~ & ~ & ~ & X \\\hline 
+    Fortress Tattoo & $8000$gp  & Large   & Average & ~ & ~ & X & ~ \\\hline 
+    Mark of the Anchor & $1000$gp  & Small   & Simple  & ~ & X & X & ~ \\\hline 
+    Mark of the Marksman & $4000$gp  & Medium  & Average & ~ & X & X & ~ \\\hline 
+    Mark of Melee & $2000$gp  & Medium  & Simple  & X & X & X & ~ \\\hline 
+    Mark of the Death Walker & $16000$gp & Large   & Ornate  & ~ & ~ & X & ~ \\\hline 
+    Mark of the Driftglobe & $4000$gp  & Medium  & Average & ~ & ~ & ~ & X \\\hline 
+    Mark of the Dryad & $8000$gp  & Medium  & Ornate  & ~ & ~ & ~ & X \\\hline 
+    Mark of the Elemental & $8000$gp  & Medium  & Ornate  & ~ & ~ & X & ~ \\\hline 
+    Mark of Elvenkind & $4000$gp  & Medium  & Average & ~ & ~ & X & ~ \\\hline 
+    Mark of the Flock & $16000$gp & Large   & Ornate  & ~ & ~ & ~ & X \\\hline 
+    Mark of the Ghast & $4000$gp  & Medium  & Average & ~ & ~ & ~ & X \\\hline 
+    Mark of the Healer & $8000$gp  & Medium  & Ornate  & ~ & X & X & ~ \\\hline 
+    Mark of the Hummingbird & $4000$gp  & Large   & Simple  & X & X & X & ~ \\\hline 
+    Mark of the Kraken & $2000$gp  & Medium  & Simple  & ~ & ~ & ~ & X \\\hline 
+    Mark of the Ox & $16000$gp & Large   & Ornate  & ~ & ~ & ~ & X \\\hline 
+    Mark of the Pack master & $8000$gp  & Medium  & Ornate  & ~ & ~ & ~ & X \\\hline 
+    Mark of the Pit Fiend & $8000$gp  & Medium  & Ornate  & ~ & ~ & ~ & X \\\hline 
+    Mark of the Snake Charmer & $8000$gp  & Medium  & Ornate  & ~ & ~ & ~ & X \\\hline 
+    Mark of the Soulmates & $4000$gp  & Small   & Ornate  & ~ & ~ & X & ~ \\\hline 
+    Mark of the Spider & $2000$gp  & Medium  & Simple  & ~ & X & X & ~ \\\hline 
+    Mark of the Spirit master & $8000$gp  & Medium  & Ornate  & ~ & ~ & ~ & X \\\hline 
+    Mark of the Tarrasque & $8000$gp  & Large   & Average & ~ & ~ & ~ & X \\\hline 
+    Mark of the Telepath & $4000$gp  & Small   & Ornate  & ~ & ~ & X & ~ \\\hline 
+    Mark of the Weapon master & $2000$gp  &  Small  & Average & ~ & ~ & X & ~ \\\hline 
+    Maw of the Dragon & $8000$gp  &  Medium & Ornate  & ~ & ~ & ~ & X \\\hline 
+    Owner’s Mark & $2000$gp  &  Small  & Simple  & X & X & X & ~ \\\hline 
+    Scar of Bravery & $2000$gp  &  Medium & Simple  & X & X & X & ~ \\\hline 
+    Slave’s Mark & $100$gp   &  Small  & Simple  & X & X & X & ~ \\\hline 
+    Spirit of the [Animal] & $16000$gp &  Large  & Ornate  & ~ & ~ & ~ & X \\\hline 
+    Spirit Walker’s Sigil & $4000$gp  &  Medium & Average & ~ & ~ & ~ & X \\\hline 
+    Tattoo of Leaping & $8000$gp  &  Medium & Ornate  & ~ & ~ & X & ~ \\\hline 
+    Tattoo of Luck & $4000$gp  &  Small  & Ornate  & ~ & ~ & X & ~ \\\hline 
+    Tattoo of Menace & $4000$gp  &  Small  & Ornate  & ~ & ~ & X & ~ \\\hline 
+    Tattoo of Major Protection & $8000$gp  &  Large  & Average & ~ & ~ & X & ~ \\\hline 
+    Tattoo of Protection & $4000$gp  &  Large  & Simple  & X & X & X & ~ \\\hline 
+    Tattoo of Striding & $4000$gp  &  Medium & Average & ~ & X & X & ~ \\\hline 
+    Tattoo of Warding & $8000$gp  &  Large  & Average & ~ & ~ & X & ~ \\\hline 
+    Venom Ward & $2000$gp  &  Small  & Average & X & X & X & ~ \\\hline 
+    Voice of Comprehension & $2000$gp  &  Small  & Average & ~ & X & X & ~ \\\hline
+    Wings of Ink & $16000$gp &  Large  & Ornate  & ~ & ~ & X & ~ \\\hline 
+\end{tabularx}
+
+
+\end{document}

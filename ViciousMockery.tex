@@ -1,0 +1,47 @@
+\documentclass[a4paper,landscape]{article}
+
+\usepackage{lib/rpg-card}
+
+
+\begin{document}
+\begin{center}
+    \pagestyle{empty}
+
+    \begin{tikzpicture}
+        \cardbackground{img/cat.jpg}
+        \cardtypeMonster{Object type}
+        \cardtitle{Made cat}
+        \cardcontent{I will destroy you!}{Let me catch you ...}
+        \cardprice{0} % this line is optional
+        \cardborder
+    \end{tikzpicture}
+    \hspace{5mm}
+    \begin{tikzpicture}
+        \cardbackground{img/olw.jpg}
+        \cardtypeObject{object type}
+        \cardtitle{Slipper Chapel}
+        \cardcontent{}{}
+        \cardprice{42}
+        \cardborder
+    \end{tikzpicture}
+    \hspace{5mm}
+    \begin{tikzpicture}
+        \cardbackground{img/axe.png}
+        \cardtypeEquipement{img/gloves.png}{Hand}
+        \cardtitle{Axe}
+        \cardcontent{}{}
+        \cardprice{12}
+        \cardborder
+    \end{tikzpicture}
+    \hspace{5mm}
+    \begin{tikzpicture}
+        \cardbackground{img/cat.jpg}
+        \cardtypeMonster{Object type}
+        \cardtitle{Vicious Mockery}
+	\cardcontent{}{Choose a creature you can see. If it can hear you, it must pass a Wisdom save or take 1d4 psychic damage and have disadvantage on its next attack roll before the end of its next turn. \\ The damage increases by 1d4 when you reach 5th, 11th, and 17th levelI will destroy you!}
+        \cardprice{0} % this line is optional
+        \cardborder
+    \end{tikzpicture}
+    
+\end{center}
+\end{document}

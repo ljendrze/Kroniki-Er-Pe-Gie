@@ -1,0 +1,718 @@
+\documentclass[a6paper,9pt]{article}
+\usepackage[bg-none]{lib/rpg-book} % Options: bg-a4, bg-letter, bg-full, bg-print, bg-none.
+\usepackage[polish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{lipsum}
+
+\usepackage{fouriernc}
+\usepackage{parskip}
+\usepackage{booktabs}
+\usepackage{array}
+
+\usepackage[pages=some]{background}
+
+\usepackage{graphicx}
+\usepackage{blindtext}
+\newsavebox\MBox
+
+\usepackage{pgfpages}
+   \pgfpagesuselayout{4 on 1}[a4paper,border shrink=5mm]
+
+\title{Trzy Rudzielce i Elf}
+\date{\today}
+\author{The Dungeon Mistress, Vivien, Yeleda, Calion, Garret}
+
+\usepackage[most]{tcolorbox}
+
+\newtcolorbox{myminipage}[4][]{
+    breakable,
+    valign=center,
+    halign=center,
+    blankest, 
+    watermark graphics=#4, 
+    watermark stretch=1,
+    width=#2,
+    height=#3,
+    #1
+}
+
+
+
+
+% Start document
+\begin{document}
+\fontfamily{ppl}\selectfont % Set text font
+\pagenumbering{gobble}
+
+\begin{rpg-monsterbox}{Garret Eartopple}
+   \textit{Stout halfling, lawful neutral}\\
+	\hrule
+	\begin{tabular}{lll}
+		\textsc{Monk} & \textsc{Way of the Open Hand} & \textsc{8}\\
+		\textsc{Cleric} & \textsc{Protection Domain} & \textsc{1}\\
+	\end{tabular}
+   \rpghline
+	\begin{tabular}{cc}
+	\begin{myminipage}{1.5cm}{1.2cm}{img/shield.png}
+		\Large{\textbf{19}}
+	\end{myminipage} &
+	\begin{myminipage}{1.5cm}{1.2cm}{img/heart.png}
+		\Large{\textbf{61}}
+\end{myminipage}
+	\begin{myminipage}{1.5cm}{1.2cm}{img/running.png}
+		\Large{\textbf{40 ft}}
+\end{myminipage}
+	\begin{myminipage}{1.5cm}{1.2cm}{img/eye.png}
+		\Large{\textbf{13}}
+\end{myminipage}
+	\begin{myminipage}{1.5cm}{1.2cm}{img/star.png}
+		\Large{\textbf{4}}
+\end{myminipage}
+	\end{tabular}
+   \rpghline
+	\vskip-.2cm
+	\header{Stats}\\
+   \hrule
+   \stats[ % This stat command will autocomplete the modifier for you
+      STR = 12, 
+      DEX = 18,
+      CON = 14,
+      INT = 8,
+      WIS = 16,
+      CHA = 10
+   ]
+   \rpghline
+	\vskip-.2cm
+   \header{Saving Throws}\\
+   \hrule
+    {\footnotesize
+	\hspace*{-3.5pt}
+	\resizebox{0.97\linewidth}{\height}{
+		\begin{tabular}{cccccc}
+			\rule{0pt}{3.7mm} %adds space between hline and table
+			\textbf{STR} & \textbf{DEX} & \textbf{CON} & \textbf{INT} & \textbf{WIS} & \textbf{CHA}\\
+			5 & 8 & 2 & -1 & 3 & 0
+		\end{tabular}
+	}
+	\\[0.4em] %adds space after table
+    }
+   \rpghline
+   \details[%
+      % If you want to use commas in these sections, enclose the
+      % description in braces.
+      % I'm so sorry.
+      skills = {Acrobatics, Athletics, Insight, Religion},
+      expertises = {Medicine},
+      tools = {Herbalism kit, Brewer's kit},
+      languages = {Common, Dwarvish, Halfling}
+   ]
+   \rpghline \\[1mm]
+
+
+\end{rpg-monsterbox}
+
+\newpage
+
+\begin{rpg-monsterbox}{Randal Buckman}
+	\textit{Human (variant), lawful neutral}\\
+	\hrule
+	\begin{tabular}{lll}
+		\textsc{Bard} & \textsc{College of Lore} & \textsc{6}\\
+		\textsc{Warlock} & \textsc{Hexblade} & \textsc{1}\\
+	\end{tabular}
+   \rpghline
+	\begin{tabular}{cc}
+	\begin{myminipage}{1.5cm}{1.2cm}{img/shield.png}
+		\Large{\textbf{15}}
+	\end{myminipage} &
+	\begin{myminipage}{1.5cm}{1.2cm}{img/heart.png}
+		\Large{\textbf{57}}
+\end{myminipage}
+	\begin{myminipage}{1.5cm}{1.2cm}{img/running.png}
+		\Large{\textbf{30 ft}}
+\end{myminipage}
+	\begin{myminipage}{1.5cm}{1.2cm}{img/eye.png}
+		\Large{\textbf{11}}
+\end{myminipage}
+	\begin{myminipage}{1.5cm}{1.2cm}{img/star.png}
+		\Large{\textbf{3}}
+\end{myminipage}
+	\end{tabular}
+   \rpghline
+	\vskip-.2cm
+	\header{Stats}\\
+   \hrule
+   \stats[ % This stat command will autocomplete the modifier for you
+      STR = 10, 
+      DEX = 16,
+      CON = 14,
+      INT = 12,
+      WIS = 8,
+      CHA = 16
+   ]
+   \rpghline
+	\vskip-.2cm
+   \header{Saving Throws}\\
+   \hrule
+    {\footnotesize
+	\hspace*{-3.5pt}
+	\resizebox{0.97\linewidth}{\height}{
+		\begin{tabular}{cccccc}
+			\rule{0pt}{3.7mm} %adds space between hline and table
+			\textbf{STR} & \textbf{DEX} & \textbf{CON} & \textbf{INT} & \textbf{WIS} & \textbf{CHA}\\
+			4 & 6 & 2 & 1 & -1 & 6
+		\end{tabular}
+	}
+	\\[0.4em] %adds space after table
+    }
+   \rpghline
+   \details[%
+      % If you want to use commas in these sections, enclose the
+      % description in braces.
+      % I'm so sorry.
+      skills = {Deception, History, Perception, Performance, Religion, Sleight of Hand, Stealth},
+      expertises = {Insight, Investigation},
+      tools = {Alchemist kit, Forgery kit, Disguise kit},
+      instruments = {Flute, Dulcimer, Lute},
+      languages = {Common, Dwarvish}
+   ]
+   \rpghline \\[1mm]
+
+\end{rpg-monsterbox}
+
+\newpage
+
+\begin{rpg-monsterbox}{Khedre nó Delaunay}
+	\textit{Half-elf, chaotic neutral}\\
+	\hrule
+	\begin{tabular}{lll}
+		\textsc{Warlock} & \textsc{Archfey} & \textsc{6}\\
+		\textsc{Fighter} &  & \textsc{1}\\
+	\end{tabular}
+   \rpghline
+	\begin{tabular}{cc}
+	\begin{myminipage}{1.5cm}{1.2cm}{img/shield.png}
+		\Large{\textbf{14}}
+	\end{myminipage} &
+	\begin{myminipage}{1.5cm}{1.2cm}{img/heart.png}
+		\Large{\textbf{52}}
+\end{myminipage}
+	\begin{myminipage}{1.5cm}{1.2cm}{img/running.png}
+		\Large{\textbf{30 ft}}
+\end{myminipage}
+	\begin{myminipage}{1.5cm}{1.2cm}{img/eye.png}
+		\Large{\textbf{10}}
+\end{myminipage}
+	\begin{myminipage}{1.5cm}{1.2cm}{img/star.png}
+		\Large{\textbf{3}}
+\end{myminipage}
+	\end{tabular}
+   \rpghline
+	\vskip-.2cm
+	\header{Stats}\\
+   \hrule
+   \stats[ % This stat command will autocomplete the modifier for you
+      STR = 8, 
+      DEX = 16,
+      CON = 14,
+      INT = 12,
+      WIS = 10,
+      CHA = 16
+   ]
+   \rpghline
+	\vskip-.2cm
+   \header{Saving Throws}\\
+   \hrule
+    {\footnotesize
+	\hspace*{-3.5pt}
+	\resizebox{0.97\linewidth}{\height}{
+		\begin{tabular}{cccccc}
+			\rule{0pt}{3.7mm} %adds space between hline and table
+			\textbf{STR} & \textbf{DEX} & \textbf{CON} & \textbf{INT} & \textbf{WIS} & \textbf{CHA}\\
+			0 & 4 & 3 & 2 & 4 & 7
+		\end{tabular}
+	}
+	\\[0.4em] %adds space after table
+    }
+   \rpghline
+   \details[%
+      % If you want to use commas in these sections, enclose the
+      % description in braces.
+      % I'm so sorry.
+      skills = {Acrobatics, Deception, Insight, Investigation, Persuassion, Stealth},
+      languages = {Common, Draconic, Elvish, Gnomish, Sylvan}
+   ]
+   \rpghline \\[1mm]
+
+\end{rpg-monsterbox}
+
+\newpage
+
+\begin{rpg-monsterbox}{Shorvak Hazestar}
+	\textit{Human (variant), lawful neutral}\\
+	\hrule
+	\begin{tabular}{lll}
+		\textsc{Paladin} & \textsc{Oath of Vengeance} & \textsc{7}\\
+	\end{tabular}
+   \rpghline
+	\begin{tabular}{cc}
+	\begin{myminipage}{1.5cm}{1.2cm}{img/shield.png}
+		\Large{\textbf{18}}
+	\end{myminipage} &
+	\begin{myminipage}{1.5cm}{1.2cm}{img/heart.png}
+		\Large{\textbf{68}}
+\end{myminipage}
+	\begin{myminipage}{1.5cm}{1.2cm}{img/running.png}
+		\Large{\textbf{30 ft}}
+\end{myminipage}
+	\begin{myminipage}{1.5cm}{1.2cm}{img/eye.png}
+		\Large{\textbf{10}}
+\end{myminipage}
+	\begin{myminipage}{1.5cm}{1.2cm}{img/star.png}
+		\Large{\textbf{3}}
+\end{myminipage}
+	\end{tabular}
+   \rpghline
+	\vskip-.2cm
+	\header{Stats}\\
+   \hrule
+   \stats[ % This stat command will autocomplete the modifier for you
+      STR = 16, 
+      DEX = 10,
+      CON = 14,
+      INT = 10,
+      WIS = 11,
+      CHA = 16
+   ]
+   \rpghline
+	\vskip-.2cm
+   \header{Saving Throws}\\
+   \hrule
+    {\footnotesize
+	\hspace*{-3.5pt}
+	\resizebox{0.97\linewidth}{\height}{
+		\begin{tabular}{cccccc}
+			\rule{0pt}{3.7mm} %adds space between hline and table
+			\textbf{STR} & \textbf{DEX} & \textbf{CON} & \textbf{INT} & \textbf{WIS} & \textbf{CHA}\\
+			3 (6) & 0 (3) & 2 (5) & 0 (3) & 3 (6) & 6 (9)
+		\end{tabular}
+	}
+	\\[0.4em] %adds space after table
+    }
+   \rpghline
+   \details[%
+      % If you want to use commas in these sections, enclose the
+      % description in braces.
+      % I'm so sorry.
+      skills = {Athletics, Insight, Intimidation, Persuassion},
+      languages = {Common, Dwarvish, Halfling, Undercommon}
+   ]
+   \rpghline \\[1mm]
+
+\end{rpg-monsterbox}
+
+\newpage
+
+\begin{rpg-monsterbox}{Ampoldórëon Sailaquettë}
+	\textit{High elf, neutral}\\
+	\hrule
+	\begin{tabular}{lll}
+		\textsc{Wizard} & \textsc{Lore Master} & \textsc{7}\\
+	\end{tabular}
+   \rpghline
+	\begin{tabular}{cc}
+	\begin{myminipage}{1.5cm}{1.2cm}{img/shield.png}
+		\Large{\textbf{13}}
+	\end{myminipage} &
+	\begin{myminipage}{1.5cm}{1.2cm}{img/heart.png}
+		\Large{\textbf{31}}
+\end{myminipage}
+	\begin{myminipage}{1.5cm}{1.2cm}{img/running.png}
+		\Large{\textbf{30 ft}}
+\end{myminipage}
+	\begin{myminipage}{1.5cm}{1.2cm}{img/eye.png}
+		\Large{\textbf{15}}
+\end{myminipage}
+	\begin{myminipage}{1.5cm}{1.2cm}{img/star.png}
+		\Large{\textbf{3}}
+\end{myminipage}
+	\end{tabular}
+   \rpghline
+	\vskip-.2cm
+	\header{Stats}\\
+   \hrule
+   \stats[ % This stat command will autocomplete the modifier for you
+      STR = 9, 
+      DEX = 14,
+      CON = 10,
+      INT = 17,
+      WIS = 14,
+      CHA = 12
+   ]
+   \rpghline
+	\vskip-.2cm
+   \header{Saving Throws}\\
+   \hrule
+    {\footnotesize
+	\hspace*{-3.5pt}
+	\resizebox{0.97\linewidth}{\height}{
+		\begin{tabular}{cccccc}
+			\rule{0pt}{3.7mm} %adds space between hline and table
+			\textbf{STR} & \textbf{DEX} & \textbf{CON} & \textbf{INT} & \textbf{WIS} & \textbf{CHA}\\
+			0 & 3 & 1 & 7 & 6 & 2
+		\end{tabular}
+	}
+	\\[0.4em] %adds space after table
+    }
+   \rpghline
+   \details[%
+      % If you want to use commas in these sections, enclose the
+      % description in braces.
+      % I'm so sorry.
+      skills = {Investigation, Medicine, Perception},
+      expertises= {Arcana, History},
+      languages = {Ancient Script, Celestial, Common, Dwarvish, Elvish, Halfling, Sylvan, Undercommon}
+   ]
+   \rpghline \\[1mm]
+
+\end{rpg-monsterbox}
+
+\newpage
+
+\begin{rpg-monsterbox}{Lander Stormwind}
+	\textit{Human (variant), lawful neutral}\\
+	\hrule
+	\begin{tabular}{lll}
+		\textsc{Cleric} & \textsc{War Domain} & \textsc{7}\\
+	\end{tabular}
+   \rpghline
+	\begin{tabular}{cc}
+	\begin{myminipage}{1.5cm}{1.2cm}{img/shield.png}
+		$\frac{\displaystyle \Large{\textbf{17}}}{\displaystyle \Large{\textbf{20}}}$
+	\end{myminipage} &
+	\begin{myminipage}{1.5cm}{1.2cm}{img/heart.png}
+		\Large{\textbf{49}}
+\end{myminipage}
+	\begin{myminipage}{1.5cm}{1.2cm}{img/running.png}
+		\Large{\textbf{30 ft}}
+\end{myminipage}
+	\begin{myminipage}{1.5cm}{1.2cm}{img/eye.png}
+		\Large{\textbf{16}}
+\end{myminipage}
+	\begin{myminipage}{1.5cm}{1.2cm}{img/star.png}
+		\Large{\textbf{3}}
+\end{myminipage}
+	\end{tabular}
+   \rpghline
+	\vskip-.2cm
+	\header{Stats}\\
+   \hrule
+   \stats[ % This stat command will autocomplete the modifier for you
+      STR = 16, 
+      DEX = 10,
+      CON = 14,
+      INT = 8,
+      WIS = 16,
+      CHA = 8
+   ]
+   \rpghline
+	\vskip-.2cm
+   \header{Saving Throws}\\
+   \hrule
+    {\footnotesize
+	\hspace*{-3.5pt}
+	\resizebox{0.97\linewidth}{\height}{
+		\begin{tabular}{cccccc}
+			\rule{0pt}{3.7mm} %adds space between hline and table
+			\textbf{STR} & \textbf{DEX} & \textbf{CON} & \textbf{INT} & \textbf{WIS} & \textbf{CHA}\\
+			4 & 1 & 3 & 0 & 7 & 0
+		\end{tabular}
+	}
+	\\[0.4em] %adds space after table
+    }
+   \rpghline
+   \details[%
+      % If you want to use commas in these sections, enclose the
+      % description in braces.
+      % I'm so sorry.
+      skills = {Athletics, Insight, Medicine, Perception, Survival},
+      languages = {Common, Dwarvish, Giant}
+   ]
+   \rpghline \\[1mm]
+
+\end{rpg-monsterbox}
+
+\newpage
+
+\begin{rpg-monsterbox}{Calion}
+	\textit{Moon elf, neutral}\\
+	\hrule
+	\begin{tabular}{lll}
+		\textsc{Wizard} & \textsc{Illusionist} & \textsc{8}\\
+		\textsc{Fighter} & \textsc{-} & \textsc{1}\\
+	\end{tabular}
+   \rpghline
+	\begin{tabular}{cc}
+	\begin{myminipage}{1.5cm}{1.2cm}{img/shield.png}
+		\Large{\textbf{13}}
+	\end{myminipage} 
+	\begin{myminipage}{1.5cm}{1.2cm}{img/heart.png}
+		\Large{\textbf{57}}
+\end{myminipage}
+	\begin{myminipage}{1.5cm}{1.2cm}{img/running.png}
+		\Large{\textbf{30 ft}}
+\end{myminipage}
+	\begin{myminipage}{1.5cm}{1.2cm}{img/eye.png}
+		\Large{\textbf{15}}
+\end{myminipage}
+	\begin{myminipage}{1.5cm}{1.2cm}{img/star.png}
+		\Large{\textbf{4}}
+\end{myminipage}
+	\end{tabular}
+   \rpghline
+	\vskip-.2cm
+	\header{Stats}\\
+   \hrule
+   \stats[ % This stat command will autocomplete the modifier for you
+      STR = 10, 
+      DEX = 17,
+      CON = 16,
+      INT = 20,
+      WIS = 13,
+      CHA = 13 
+   ]
+   \rpghline
+	\vskip-.2cm
+   \header{Saving Throws}\\
+   \hrule
+    {\footnotesize
+	\hspace*{-3.5pt}
+	\resizebox{0.97\linewidth}{\height}{
+		\begin{tabular}{cccccc}
+			\rule{0pt}{3.7mm} %adds space between hline and table
+			\textbf{STR} & \textbf{DEX} & \textbf{CON} & \textbf{INT} & \textbf{WIS} & \textbf{CHA}\\
+			0 & 3 & 3 & 9 & 5 & 1
+		\end{tabular}
+	}
+	\\[0.4em] %adds space after table
+    }
+   \rpghline
+   \details[%
+      % If you want to use commas in these sections, enclose the
+      % description in braces.
+      % I'm so sorry.
+      skills = {History, Medicine, Perception, Religion},
+      expertises = {Arcana},
+	  tools = {Herbalism kit},
+      languages = {Celestial, Common, Elvish, Gnomish, Sylvan}
+   ]
+   \rpghline \\[1mm]
+
+\end{rpg-monsterbox}
+
+\newpage
+
+\begin{rpg-monsterbox}{Vivien Ithwen}
+	\textit{Wood elf, neutral}\\
+	\hrule
+	\begin{tabular}{lll}
+		\textsc{Druid} & \textsc{Circle of the Moon} & \textsc{9}\\
+	\end{tabular}
+   \rpghline
+	\begin{tabular}{cc}
+	\begin{myminipage}{1.5cm}{1.2cm}{img/shield.png}
+		\Large{\textbf{14}}
+	\end{myminipage} 
+	\begin{myminipage}{1.5cm}{1.2cm}{img/heart.png}
+		\Large{\textbf{65}}
+\end{myminipage}
+	\begin{myminipage}{1.5cm}{1.2cm}{img/running.png}
+		\Large{\textbf{45 ft}}
+\end{myminipage}
+	\begin{myminipage}{1.5cm}{1.2cm}{img/eye.png}
+		\Large{\textbf{17}}
+\end{myminipage}
+	\begin{myminipage}{1.5cm}{1.2cm}{img/star.png}
+		\Large{\textbf{4}}
+\end{myminipage}
+	\end{tabular}
+   \rpghline
+	\vskip-.2cm
+	\header{Stats}\\
+    \hrule
+   \stats[ % This stat command will autocomplete the modifier for you
+      STR = 12, 
+      DEX = 14,
+      CON = 14,
+      INT = 13,
+      WIS = 17,
+      CHA = 13 
+   ]
+   \rpghline
+	\vskip-.2cm
+   \header{Saving Throws}\\
+    \hrule
+    {\footnotesize
+	\hspace*{-3.5pt}
+	\resizebox{0.97\linewidth}{\height}{
+		\begin{tabular}{cccccc}
+			\rule{0pt}{3.7mm} %adds space between hline and table
+			\textbf{STR} & \textbf{DEX} & \textbf{CON} & \textbf{INT} & \textbf{WIS} & \textbf{CHA}\\
+			1 & 2+ & 2 & 5 & 7 & 1
+		\end{tabular}
+	}
+	\\[0.4em] %adds space after table
+    }
+   \rpghline
+   \details[%
+      % If you want to use commas in these sections, enclose the
+      % description in braces.
+      % I'm so sorry.
+      skills = {Arcana, Medicine, Perception, Religion, Survival},
+	  tools = {Herbalism kit},
+      languages = {Common, Druidic, Elvish, Sylvan}
+   ]
+   \rpghline \\[1mm]
+
+\end{rpg-monsterbox}
+
+\newpage
+
+\begin{rpg-monsterbox}{Lorros}
+	\textit{High elf, neutral}\\
+	\hrule
+	\begin{tabular}{lll}
+		\textsc{Rogue} & \textsc{Arcane Trickster} & \textsc{5}\\
+		\textsc{Wizard} & \textsc{Bladesinger} & \textsc{4}\\
+	\end{tabular}
+   \rpghline
+	\begin{tabular}{cc}
+	\begin{myminipage}{1.5cm}{1.2cm}{img/shield.png}
+		\Large{\textbf{16}}
+	\end{myminipage} 
+	\begin{myminipage}{1.5cm}{1.2cm}{img/heart.png}
+		\Large{\textbf{67}}
+\end{myminipage}
+	\begin{myminipage}{1.5cm}{1.2cm}{img/running.png}
+		\Large{\textbf{30 ft}}
+\end{myminipage}
+	\begin{myminipage}{1.5cm}{1.2cm}{img/eye.png}
+		\Large{\textbf{15}}
+\end{myminipage}
+	\begin{myminipage}{1.5cm}{1.2cm}{img/star.png}
+		\Large{\textbf{4}}
+\end{myminipage}
+	\end{tabular}
+   \rpghline
+	\vskip-.2cm
+	\header{Stats}\\
+   \hrule
+   \stats[ % This stat command will autocomplete the modifier for you
+      STR = 8, 
+      DEX = 18,
+      CON = 14,
+      INT = 16,
+      WIS = 12,
+      CHA = 10 
+   ]
+   \rpghline
+	\vskip-.2cm
+   \header{Saving Throws}\\
+   \hrule
+    {\footnotesize
+	\hspace*{-3.5pt}
+	\resizebox{0.97\linewidth}{\height}{
+		\begin{tabular}{cccccc}
+			\rule{0pt}{3.7mm} %adds space between hline and table
+			\textbf{STR} & \textbf{DEX} & \textbf{CON} & \textbf{INT} & \textbf{WIS} & \textbf{CHA}\\
+			-1 & 8 & 6 & 7 & 1 & 0
+		\end{tabular}
+	}
+	\\[0.4em] %adds space after table
+    }
+   \rpghline
+   \details[%
+      % If you want to use commas in these sections, enclose the
+      % description in braces.
+      % I'm so sorry.
+      skills = {Acrobatics, Deception, Insight, Investigation, Perception, Performance},
+      expertises = {Sleight of Hand, Stealth},
+	  tools = {Thieves' Tools},
+      languages = {Common, Draconic, Elvish, Halfling, Undercommon}
+   ]
+   \rpghline \\[1mm]
+
+\end{rpg-monsterbox}
+
+\newpage
+
+\begin{rpg-monsterbox}{Garvin Varcona}
+    \textit{Human (variant), lawful neutral}\\
+	\hrule
+	\begin{tabular}{lll}
+		\textsc{Fighter} & \textsc{Battle Master} & \textsc{7}\\
+		\textsc{Ranger} & \textsc{-} & \textsc{2}\\
+	\end{tabular}
+   \rpghline
+	\begin{tabular}{cc}
+	\begin{myminipage}{1.5cm}{1.2cm}{img/shield.png}
+		\Large{\textbf{18}}
+	\end{myminipage} 
+	\begin{myminipage}{1.5cm}{1.2cm}{img/heart.png}
+		\Large{\textbf{67}}
+\end{myminipage}
+	\begin{myminipage}{1.5cm}{1.2cm}{img/running.png}
+		\Large{\textbf{30 ft}}
+\end{myminipage}
+	\begin{myminipage}{1.5cm}{1.2cm}{img/eye.png}
+		\Large{\textbf{15}}
+\end{myminipage}
+	\begin{myminipage}{1.5cm}{1.2cm}{img/star.png}
+		\Large{\textbf{4}}
+\end{myminipage}
+	\end{tabular}
+   \rpghline
+	\vskip-.2cm
+	\header{Stats}\\
+   \hrule
+   \stats[ % This stat command will autocomplete the modifier for you
+      STR = 21, 
+      DEX = 14,
+      CON = 13,
+      INT = 10,
+      WIS = 13,
+      CHA = 9 
+   ]
+   \rpghline
+	\vskip-.2cm
+   \header{Saving Throws}\\
+   \hrule
+    {\footnotesize
+	\hspace*{-3.5pt}
+	\resizebox{0.97\linewidth}{\height}{
+		\begin{tabular}{cccccc}
+			\rule{0pt}{3.7mm} %adds space between hline and table
+			\textbf{STR} & \textbf{DEX} & \textbf{CON} & \textbf{INT} & \textbf{WIS} & \textbf{CHA}\\
+			9 & 2 & 5 & 0 & 1 & -1
+		\end{tabular}
+	}
+	\\[0.4em] %adds space after table
+    }
+   \rpghline
+   \details[%
+      % If you want to use commas in these sections, enclose the
+      % description in braces.
+      % I'm so sorry.
+      skills = {Arcana, Athletics, Insight, Investigation, Perception, Stealth},
+	  tools = {Dice Set, Playing Card Set},
+      languages = {Common, Gnomish}
+   ]
+   \rpghline \\[1mm]
+
+\end{rpg-monsterbox}
+
+\end{document}

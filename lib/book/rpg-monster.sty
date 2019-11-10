@@ -123,29 +123,43 @@
 }
 
 \newkeycommand\details[skills=,
+                      expertises=,
+                      tools=,
+                      instruments=,
                       damageimmunities=,
                       savingthrows=,
                       conditionimmunities=,
                       damageresistances=,
                       damagevulnerabilities=,
-                      senses=-,
-                      languages=-,
-                      challenge=0]{%
+                      senses=,
+                      languages=,
+                      challenge=]{%
+			      \begin{tabular}{p{0.3\linewidth}p{0.65\linewidth}}
   \ifcommandkey{savingthrows}
-    {\textbf{Saving Throws} \commandkey{savingthrows}\\}{}
+				      {\textbf{Saving Throws} & \textsc{\commandkey{savingthrows}}\\\hline}{}
   \ifcommandkey{skills}
-    {\textbf{Skills} \commandkey{skills}\\}{}
+				     {\textbf{Skills} & \textsc{\commandkey{skills}}\\\hline}{}
+  \ifcommandkey{expertises}
+				      {\textbf{Expertises} & \textsc{\commandkey{expertises}}\\\hline}{}
+  \ifcommandkey{tools}
+				     {\textbf{Tools} & \textsc{\commandkey{tools}}\\\hline}{}
+  \ifcommandkey{instruments}
+				     {\textbf{Instruments} & \textsc{\commandkey{instruments}}\\\hline}{}
   \ifcommandkey{damagevulnerabilities}
-    {\textbf{Damage Vulnerabilities} \commandkey{damagevulnerabilities}\\}{}
+				      {\textbf{Damage Vulnerabilities} & \textsc{\commandkey{damagevulnerabilities}\\\hline}}{}
   \ifcommandkey{damageresistances}
-    {\textbf{Damage Resistances} \commandkey{damageresistances}\\}{}
+				      {\textbf{Damage Resistances} & \textsc{\commandkey{damageresistances}}\\\hline}{}
   \ifcommandkey{damageimmunities}
-    {\textbf{Damage Immunities} \commandkey{damageimmunities}\\}{}
+				      {\textbf{Damage Immunities} & \textsc{\commandkey{damageimmunities}}\\\hline}{}
   \ifcommandkey{conditionimmunities}
-    {\textbf{Condition Immunities} \commandkey{conditionimmunities}\\}{}
+				      {\textbf{Condition Immunities} & \textsc{\commandkey{conditionimmunities}}\\\hline}{}
   % These traits appear to always be present.
-  {\textbf{Senses} \commandkey{senses}\\}
-  {\textbf{Languages} \commandkey{languages}\\}
-  {\textbf{Challenge} \commandkey{challenge}\\}
+  \ifcommandkey{senses}
+				      {\textbf{Senses} & \textsc{\commandkey{senses}}\\\hline}{}
+  \ifcommandkey{challenge}
+				      {\textbf{Challenge} & \textsc{\commandkey{challenge}}\\\hline}{}
+  \ifcommandkey{languages}
+				     {\textbf{Languages} & \textsc{\commandkey{languages}}\\\hline}{}
+			     \end{tabular}
 \color{black}
 }
